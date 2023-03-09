@@ -64,7 +64,18 @@ layout: default
               </div>
               
             </div>
-          {%- endif %}
-        </article> -->
+            {%- endif %}
 
+          <!-- Selected papers -->
+          {% if page.education -%}
+            <!-- <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">selected publications</a></h2> -->
+            {%- include education.html %}
+          {%- endif %}
+
+          {% if page.experience -%}
+            <!-- <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">selected publications</a></h2> -->
+            {%- include experience.html %}
+          {%- endif %}
+            
+        </article> 
 </div>
