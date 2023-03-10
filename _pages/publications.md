@@ -1,5 +1,5 @@
 ---
-permalink: /#publication
+permalink: "#publication"
 title: Publication
 nav: true
 nav_order: 4
