@@ -71,12 +71,12 @@ layout: default
             {%- include interests.html %}
           {%- endif %} -->
 
-          {% if page.education -%}
-            {%- include education.html %}
-          {%- endif %}
-
           {% if page.experience -%}
             {%- include experience.html %}
+          {%- endif %}
+
+          {% if page.education -%}
+            {%- include education.html %}
           {%- endif %}
 
           {% if page.publications -%}
