@@ -1,3 +1,10 @@
+---
+permalink: /#publication
+title: Publication
+nav: true
+nav_order: 4
+---
+
 <!-- ---
 layout: page
 permalink: /publications/
@@ -17,3 +24,4 @@ nav_order: 1
 {% endfor %}
 
 </div> -->
+
