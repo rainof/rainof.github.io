@@ -67,14 +67,32 @@ layout: default
             {%- endif %}
 
           <!-- Selected papers -->
-          {% if page.education -%}
-            <!-- <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">selected publications</a></h2> -->
-            {%- include education.html %}
-          {%- endif %}
+          <!-- {% if page.interests -%}
+            {%- include interests.html %}
+          {%- endif %} -->
 
           {% if page.experience -%}
-            <!-- <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">selected publications</a></h2> -->
             {%- include experience.html %}
+          {%- endif %}
+
+          {% if page.qualification -%}
+            {%- include qualification.html %}
+          {%- endif %}
+
+          {% if page.volunteer -%}
+            {%- include volunteer.html %}
+          {%- endif %}
+
+          {% if page.skill -%}
+            {%- include skill.html %}
+          {%- endif %}
+
+          {% if page.publications -%}
+            {%- include publications.html %}
+          {%- endif %}
+
+          {% if page.education -%}
+            {%- include education.html %}
           {%- endif %}
             
         </article> 

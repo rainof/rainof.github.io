@@ -16,8 +16,12 @@ profile:
 news: false  # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
-education: true
 experience: true
+qualification: true
+volunteer: true
+skill: true
+publications: true
+education: true
 ---
 
 <h3><b>About me</b></h3>
@@ -26,6 +30,6 @@ My research interests include End-User Development (EUD) specifically software i
 <!-- `While studying in graduate school, I realized that data is important for enabling technology to move efficiently, so I have started to learn more about data science.` -->
 I am a proactive, empathetic, hard worker who is eager to learn new things and uses a creative approach to solve challenging problems. I can apply my skills and experiences to the completion of my assignments.
 
-<p><b>Contact:</b> f.pattaraporn.t@gmail.com</p>
+<p><b>Contact:</b> {firstname}.{lastname}@gmail.com</p>
 
-
+<p><b>Interests:</b> Robotics competition, Puzzle games, Learning languages</p>
