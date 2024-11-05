@@ -1,5 +1,5 @@
 import React from "react";
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route, NavLink } from "react-router-dom";
 import "./App.css";
 import HomePage from "./pages/HomePage";
 import ProjectPage from "./pages/ProjectPage";
@@ -12,6 +12,73 @@ function App() {
   return (
     <Router>
       <div className="App">
+        <nav className="border-b">
+          <div className="container mx-auto flex h-14 items-center">
+            <div className="flex w-full justify-center gap-6">
+              <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  `px-4 py-1 rounded-lg transition-colors ${
+                    isActive
+                      ? "bg-orange-500 text-white"
+                      : "text-gray-600 hover:text-gray-800"
+                  }`
+                }
+              >
+                Home
+              </NavLink>
+              <NavLink
+                to="/projects"
+                className={({ isActive }) =>
+                  `px-4 py-1 rounded-lg transition-colors ${
+                    isActive
+                      ? "bg-orange-500 text-white"
+                      : "text-gray-600 hover:text-gray-800"
+                  }`
+                }
+              >
+                Projects
+              </NavLink>
+              <NavLink
+                to="/achievements"
+                className={({ isActive }) =>
+                  `px-4 py-1 rounded-lg transition-colors ${
+                    isActive
+                      ? "bg-orange-500 text-white"
+                      : "text-gray-600 hover:text-gray-800"
+                  }`
+                }
+              >
+                Achievements
+              </NavLink>
+              <NavLink
+                to="/certificates"
+                className={({ isActive }) =>
+                  `px-4 py-1 rounded-lg transition-colors ${
+                    isActive
+                      ? "bg-orange-500 text-white"
+                      : "text-gray-600 hover:text-gray-800"
+                  }`
+                }
+              >
+                Certificates
+              </NavLink>
+              <NavLink
+                to="/publications"
+                className={({ isActive }) =>
+                  `px-4 py-1 rounded-lg transition-colors ${
+                    isActive
+                      ? "bg-orange-500 text-white"
+                      : "text-gray-600 hover:text-gray-800"
+                  }`
+                }
+              >
+                Publications
+              </NavLink>
+            </div>
+          </div>
+        </nav>
+
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/projects" element={<ProjectPage />} />
