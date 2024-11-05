@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import { Menu } from "lucide-react";
 import { HashRouter as Router, Routes, Route, NavLink } from "react-router-dom";
 import "./App.css";
 import HomePage from "./pages/HomePage";
@@ -9,16 +10,29 @@ import PublicationPage from "./pages/PublicationPage";
 import NotFoundPage from "./pages/NotFoundPage";
 
 function App() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
     <Router>
-      <div className="App">
+      <div className="min-h-screen bg-white">
         <nav className="border-b">
-          <div className="container mx-auto flex h-14 items-center">
-            <div className="flex w-full justify-center gap-6">
+          <div className="container mx-auto px-4 flex h-14 items-center justify-between">
+            <button
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="sm:hidden text-gray-600 hover:text-gray-800"
+            >
+              <Menu className="h-6 w-6" />
+              <span className="sr-only">Toggle menu</span>
+            </button>
+            <div
+              className={`${
+                isMenuOpen ? "flex" : "hidden"
+              } sm:flex flex-col sm:flex-row sm:w-full sm:justify-center sm:gap-6 absolute sm:relative left-0 right-0 top-14 sm:top-0 bg-white sm:bg-transparent z-50 border-b sm:border-0 shadow-md sm:shadow-none`}
+            >
               <NavLink
                 to="/"
                 className={({ isActive }) =>
-                  `px-4 py-1 rounded-lg transition-colors ${
+                  `px-4 py-2 sm:py-1 w-full sm:w-auto text-center sm:rounded-2xl transition-colors ${
                     isActive
                       ? "bg-orange-500 text-white"
                       : "text-gray-600 hover:text-gray-800"
@@ -27,54 +41,23 @@ function App() {
               >
                 Home
               </NavLink>
-              <NavLink
-                to="/projects"
-                className={({ isActive }) =>
-                  `px-4 py-1 rounded-lg transition-colors ${
-                    isActive
-                      ? "bg-orange-500 text-white"
-                      : "text-gray-600 hover:text-gray-800"
-                  }`
-                }
-              >
-                Projects
-              </NavLink>
-              <NavLink
-                to="/achievements"
-                className={({ isActive }) =>
-                  `px-4 py-1 rounded-lg transition-colors ${
-                    isActive
-                      ? "bg-orange-500 text-white"
-                      : "text-gray-600 hover:text-gray-800"
-                  }`
-                }
-              >
-                Achievements
-              </NavLink>
-              <NavLink
-                to="/certificates"
-                className={({ isActive }) =>
-                  `px-4 py-1 rounded-lg transition-colors ${
-                    isActive
-                      ? "bg-orange-500 text-white"
-                      : "text-gray-600 hover:text-gray-800"
-                  }`
-                }
-              >
-                Certificates
-              </NavLink>
-              <NavLink
-                to="/publications"
-                className={({ isActive }) =>
-                  `px-4 py-1 rounded-lg transition-colors ${
-                    isActive
-                      ? "bg-orange-500 text-white"
-                      : "text-gray-600 hover:text-gray-800"
-                  }`
-                }
-              >
-                Publications
-              </NavLink>
+              {["Projects", "Achievements", "Certificates", "Publications"].map(
+                (item) => (
+                  <NavLink
+                    key={item}
+                    to={`/${item.toLowerCase()}`}
+                    className={({ isActive }) =>
+                      `px-4 py-2 sm:py-1 w-full sm:w-auto text-center sm:rounded-2xl transition-colors ${
+                        isActive
+                          ? "bg-orange-500 text-white"
+                          : "text-gray-600 hover:text-gray-800"
+                      }`
+                    }
+                  >
+                    {item}
+                  </NavLink>
+                )
+              )}
             </div>
           </div>
         </nav>
