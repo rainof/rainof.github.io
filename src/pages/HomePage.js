@@ -1,5 +1,6 @@
 import React from "react";
 import { Mail, Github, Linkedin, ChevronDown } from "lucide-react";
+import FrontendMentor from "../images/frontendmentor.svg";
 // import Hero from "../images/DSC08321.JPG";
 import Hero from "../images/temp.png";
 
@@ -11,7 +12,7 @@ function HomePage() {
           {/* Hero Section */}
           <div className="text-center md:text-left md:w-[45%]">
             <p className="text-orange-500">Hello, I'm</p>
-            <h1 className="text-4xl md:text-6xl font-bold mt-8 mb-4">
+            <h1 className="text-4xl md:text-6xl xl:text-7xl font-bold mt-8 mb-4">
               Pattaraporn
               <br />
               Tulathum
@@ -42,6 +43,17 @@ function HomePage() {
               >
                 <Linkedin className="h-5 w-5" />
                 <span className="sr-only">LinkedIn</span>
+              </a>
+              <a
+                href="https://www.frontendmentor.io/profile/rainof"
+                className="p-2 rounded-full bg-orange-500 text-white hover:bg-orange-600 transition-colors"
+              >
+                <img
+                  src={FrontendMentor}
+                  alt="Fronend Mentor"
+                  className="h-5 w-5 filter invert drop-shadow-lg"
+                />
+                <span className="sr-only">Home</span>
               </a>
             </div>
           </div>
