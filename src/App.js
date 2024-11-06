@@ -31,7 +31,7 @@ function App() {
               <NavLink
                 to="/"
                 className={({ isActive }) =>
-                  `px-4 py-2 sm:py-1 w-full sm:w-auto text-center sm:rounded-2xl transition-colors ${
+                  `px-4 py-2 sm:py-1 w-full sm:w-auto text-center sm:rounded-2xl transition-colors bg-orange-100 ${
                     isActive
                       ? "bg-orange-500 text-white"
                       : "text-gray-600 hover:text-gray-800"
@@ -47,7 +47,7 @@ function App() {
                     item === "About Me" ? "aboutme" : item.toLowerCase()
                   }`}
                   className={({ isActive }) =>
-                    `px-4 py-2 sm:py-1 w-full sm:w-auto text-center sm:rounded-2xl transition-colors ${
+                    `px-4 py-2 sm:py-1 w-full sm:w-auto text-center sm:rounded-2xl transition-colors bg-orange-100 ${
                       isActive
                         ? "bg-orange-500 text-white"
                         : "text-gray-600 hover:text-gray-800"
