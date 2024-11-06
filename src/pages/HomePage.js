@@ -10,7 +10,7 @@ function HomePage() {
         <div className="flex flex-col md:flex-row items-center justify-center gap-8 max-w-3xl w-full">
           {/* Hero Section */}
           <div className="text-center md:text-left md:w-[45%]">
-            <p className="text-[#FF4500]">Hello, I'm</p>
+            <p className="text-orange-500">Hello, I'm</p>
             <h1 className="text-4xl md:text-6xl font-bold mt-8 mb-4">
               Pattaraporn
               <br />
@@ -65,10 +65,10 @@ function HomePage() {
           onClick={() =>
             window.scrollTo({ top: window.innerHeight, behavior: "smooth" })
           }
-          className="text-[#FF4500] hover:text-orange-600 transition-colors"
+          className="text-orange-500 hover:text-orange-600 transition-colors"
           aria-label="Scroll down for more content"
         >
-          <ChevronDown className="h-8 w-8 text-[#FF4500]" />
+          <ChevronDown className="h-8 w-8 text-orange-500" />
         </button>
       </div>
     </div>
