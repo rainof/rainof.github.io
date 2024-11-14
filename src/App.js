@@ -1,7 +1,5 @@
-import React, { useState } from "react";
-import { Menu } from "lucide-react";
-import { HashRouter as Router, Routes, Route, NavLink } from "react-router-dom";
-import "./App.css";
+import React from "react";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Layout from "./pages/Layout";
 import Home from "./components/Home";
 import AboutMe from "./components/AboutMe";
@@ -11,8 +9,6 @@ import Resume from "./components/ResumePage";
 import NotFound from "./pages/NotFoundPage";
 
 function App() {
-  // const [isMenuOpen, setIsMenuOpen] = useState(false);
-
   return (
     <Router>
       <div className="min-h-screen bg-orange-100">
@@ -23,6 +19,7 @@ function App() {
             <Route path="projects" element={<Project />} />
             <Route path="achievements" element={<Achievement />} />
             <Route path="resume" element={<Resume />} />
+            <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
       </div>
