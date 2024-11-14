@@ -1,6 +1,6 @@
 import React from "react";
 
-function ProjectPage() {
+function Project() {
   const projects = [
     {
       name: "Temporary",
@@ -61,4 +61,4 @@ function ProjectPage() {
   );
 }
 
-export default ProjectPage;
+export default Project;

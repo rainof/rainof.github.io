@@ -3,7 +3,7 @@ import { Mail, Github, Linkedin, ChevronDown } from "lucide-react";
 import FrontendMentor from "../images/frontendmentor.svg";
 import Hero from "../images/fon_img_v2.png";
 
-function HomePage() {
+function Home() {
   return (
     <div className="min-h-screen bg-white relative">
       <div className="container mx-auto px-16 flex items-center justify-center min-h-[calc(100vh-8rem)] md:min-h-[calc(100vh-6rem)]">
@@ -86,4 +86,4 @@ function HomePage() {
   );
 }
 
-export default HomePage;
+export default Home;
