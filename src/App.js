@@ -3,9 +3,9 @@ import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Layout from "./pages/Layout";
 import Home from "./components/Home";
 import AboutMe from "./components/AboutMe";
-import Project from "./components/ProjectPage";
+import Project from "./components/Project";
 import Achievement from "./components/Achievement";
-import Resume from "./components/ResumePage";
+import Resume from "./components/Resume";
 import NotFound from "./pages/NotFoundPage";
 
 function App() {
