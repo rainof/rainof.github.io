@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import { NavLink, Outlet } from "react-router-dom";
-import { Menu } from "lucide-react"; // Ensure you have installed the lucide-react package
+import { Menu } from "lucide-react";
 
 function Layout() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <div className="flex flex-col min-h-screen">
-      <header className="bg-orange-100 text-white">
+      <header className="bg-orange-200 text-white">
         <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -24,12 +24,12 @@ function Layout() {
           >
             <NavLink
               to="/"
-              onClick={() => setIsMenuOpen(false)} // Close menu on link click
+              onClick={() => setIsMenuOpen(false)}
               className={({ isActive }) =>
                 `px-4 py-2 sm:py-1 w-full sm:w-auto text-center sm:rounded-2xl transition-colors ${
                   isActive
                     ? "bg-orange-500 text-white"
-                    : "text-gray-600 hover:text-gray-800"
+                    : "text-black hover:text-white"
                 }`
               }
             >
@@ -42,7 +42,7 @@ function Layout() {
                 `px-4 py-2 sm:py-1 w-full sm:w-auto text-center sm:rounded-2xl transition-colors ${
                   isActive
                     ? "bg-orange-500 text-white"
-                    : "text-gray-600 hover:text-gray-800"
+                    : "text-black hover:text-white"
                 }`
               }
             >
@@ -55,7 +55,7 @@ function Layout() {
                 `px-4 py-2 sm:py-1 w-full sm:w-auto text-center sm:rounded-2xl transition-colors ${
                   isActive
                     ? "bg-orange-500 text-white"
-                    : "text-gray-600 hover:text-gray-800"
+                    : "text-black hover:text-white"
                 }`
               }
             >
@@ -68,7 +68,7 @@ function Layout() {
                 `px-4 py-2 sm:py-1 w-full sm:w-auto text-center sm:rounded-2xl transition-colors ${
                   isActive
                     ? "bg-orange-500 text-white"
-                    : "text-gray-600 hover:text-gray-800"
+                    : "text-black hover:text-white"
                 }`
               }
             >
@@ -81,7 +81,7 @@ function Layout() {
                 `px-4 py-2 sm:py-1 w-full sm:w-auto text-center sm:rounded-2xl transition-colors ${
                   isActive
                     ? "bg-orange-500 text-white"
-                    : "text-gray-600 hover:text-gray-800"
+                    : "text-black hover:text-white"
                 }`
               }
             >
@@ -91,7 +91,6 @@ function Layout() {
         </nav>
       </header>
       <main className="flex-grow">
-        {/* Outlet renders child components here */}
         <Outlet />
       </main>
       <footer className="bg-gray-800 text-white py-4">
