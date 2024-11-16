@@ -1,23 +1,95 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Mail, Github, Linkedin, ChevronDown } from "lucide-react";
 import FrontendMentor from "../images/frontendmentor.svg";
 import Hero from "../images/fon_img_v2.png";
 
+const useTypingEffect = (
+  phrases,
+  typingSpeed = 100,
+  deletingSpeed = 50,
+  pauseDuration = 1000
+) => {
+  const [displayText, setDisplayText] = useState("");
+  const [currentPhraseIndex, setCurrentPhraseIndex] = useState(0);
+  const [isTyping, setIsTyping] = useState(true);
+  const [isPaused, setIsPaused] = useState(false);
+
+  useEffect(() => {
+    let timer;
+
+    const currentPhrase = phrases[currentPhraseIndex];
+
+    if (isPaused) {
+      timer = setTimeout(() => {
+        setIsPaused(false);
+        setDisplayText(currentPhrase.slice(0, displayText.length + 1));
+      }, pauseDuration);
+    } else if (isTyping) {
+      if (displayText !== currentPhrase) {
+        if (
+          currentPhrase === "I am ... who I am" &&
+          displayText === "I am ..."
+        ) {
+          setIsPaused(true);
+        } else {
+          timer = setTimeout(() => {
+            setDisplayText(currentPhrase.slice(0, displayText.length + 1));
+          }, typingSpeed);
+        }
+      } else {
+        timer = setTimeout(() => setIsTyping(false), pauseDuration);
+      }
+    } else {
+      if (displayText !== "") {
+        timer = setTimeout(() => {
+          setDisplayText(displayText.slice(0, -1));
+        }, deletingSpeed);
+      } else {
+        setCurrentPhraseIndex((prevIndex) => (prevIndex + 1) % phrases.length);
+        setIsTyping(true);
+      }
+    }
+
+    return () => clearTimeout(timer);
+  }, [
+    displayText,
+    isTyping,
+    isPaused,
+    currentPhraseIndex,
+    phrases,
+    typingSpeed,
+    deletingSpeed,
+    pauseDuration,
+  ]);
+
+  return displayText;
+};
+
 function Home() {
+  const phrases = [
+    "I am a frontend developer",
+    "I am a robotics researcher",
+    "I am a lifelong learner",
+    "I am ... who I am",
+  ];
+  const animatedText = useTypingEffect(phrases);
   return (
     <div className="min-h-screen bg-white relative">
-      <div className="container mx-auto px-16 flex items-center justify-center min-h-[calc(100vh-8rem)] md:min-h-[calc(100vh-6rem)]">
-        <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-36 xl:gap-60 max-w-3xl w-full">
+      <div className="container mx-auto px-20 flex items-center justify-center min-h-[calc(100vh-8rem)] md:min-h-[calc(100vh-6rem)]">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-48 lg:gap-48 xl:gap-60 max-w-3xl w-full">
           {/* Hero Section */}
           <div className="text-center md:text-left md:w-[45%]">
-            <p className="text-orange-500">Hello, I'm</p>
-            <h1 className="text-3xl md:text-6xl xl:text-7xl font-bold mt-8 mb-4">
+            <p className="text-xl md:text-2xl xl:text-3xl text-orange-500">
+              Hello, I'm
+            </p>
+            <h1 className="text-4xl md:text-6xl xl:text-7xl font-bold mt-8 mb-4">
               Pattaraporn
               <br />
               Tulathum
             </h1>
-            <p className="text-zinc-600 sm:text-zinc-400 mt-4">
-              Frontend developer
+            <p className="text-xl md:text-2xl xl:text=3xl text-zinc-600 sm:text-zinc-400 mt-8">
+              {animatedText}
+              <span className="animate-blink inline-block w-[0.1em] h-[0.8em] ml-1 bg-orange-400"></span>
             </p>
 
             {/* Social Links */}
@@ -87,3 +159,122 @@ function Home() {
 }
 
 export default Home;
+
+//
+
+// import React, { useState, useEffect } from "react";
+// import { Link } from "react-router-dom";
+
+// const useTypingEffect = (
+//   phrases,
+//   typingSpeed = 100,
+//   deletingSpeed = 50,
+//   pauseDuration = 2000
+// ) => {
+//   const [displayText, setDisplayText] = useState("");
+//   const [currentPhraseIndex, setCurrentPhraseIndex] = useState(0);
+//   const [isTyping, setIsTyping] = useState(true);
+//   const [isPaused, setIsPaused] = useState(false);
+
+//   useEffect(() => {
+//     let timer;
+
+//     const currentPhrase = phrases[currentPhraseIndex];
+
+//     if (isPaused) {
+//       timer = setTimeout(() => {
+//         setIsPaused(false);
+//         setDisplayText(currentPhrase.slice(0, displayText.length + 1));
+//       }, pauseDuration);
+//     } else if (isTyping) {
+//       if (displayText !== currentPhrase) {
+//         if (
+//           currentPhrase === "I am ... who I am" &&
+//           displayText === "I am ..."
+//         ) {
+//           setIsPaused(true);
+//         } else {
+//           timer = setTimeout(() => {
+//             setDisplayText(currentPhrase.slice(0, displayText.length + 1));
+//           }, typingSpeed);
+//         }
+//       } else {
+//         timer = setTimeout(() => setIsTyping(false), pauseDuration);
+//       }
+//     } else {
+//       if (displayText !== "") {
+//         timer = setTimeout(() => {
+//           setDisplayText(displayText.slice(0, -1));
+//         }, deletingSpeed);
+//       } else {
+//         setCurrentPhraseIndex((prevIndex) => (prevIndex + 1) % phrases.length);
+//         setIsTyping(true);
+//       }
+//     }
+
+//     return () => clearTimeout(timer);
+//   }, [
+//     displayText,
+//     isTyping,
+//     isPaused,
+//     currentPhraseIndex,
+//     phrases,
+//     typingSpeed,
+//     deletingSpeed,
+//     pauseDuration,
+//   ]);
+
+//   return displayText;
+// };
+
+// const AboutPage = () => {
+//   const phrases = [
+//     "I am a frontend developer",
+//     "I am a robotics researcher",
+//     "I am a lifelong learner",
+//     "I am ... who I am",
+//   ];
+//   const animatedText = useTypingEffect(phrases);
+
+//   return (
+//     <div className="min-h-screen flex flex-col relative bg-gradient-to-br from-[#0d3349] via-[#1f4068] to-[#432e5d] text-white">
+//       <nav className="absolute top-0 right-0 p-6">
+//         <ul className="flex space-x-6 text-gray-300/80">
+//           <li>
+//             <Link to="/" className="hover:text-white transition-colors">
+//               /home
+//             </Link>
+//           </li>
+//           <li>
+//             <Link to="/projects" className="hover:text-white transition-colors">
+//               /projects
+//             </Link>
+//           </li>
+//           <li>
+//             <Link to="/about" className="hover:text-white transition-colors">
+//               /about
+//             </Link>
+//           </li>
+//         </ul>
+//       </nav>
+
+//       <main className="flex-1 flex flex-col items-center justify-center px-4 space-y-4">
+//         <h1 className="text-4xl md:text-5xl lg:text-6xl font-light text-center">
+//           Hi, I'm <span className="font-normal">Your Name</span> 👋
+//         </h1>
+//         <p className="text-xl md:text-2xl lg:text-3xl font-light h-8 text-center">
+//           {animatedText}
+//           <span className="animate-blink inline-block w-[0.05em] h-[1.1em] ml-1 bg-yellow-400"></span>
+//         </p>
+//       </main>
+
+//       <footer className="absolute bottom-0 left-0 right-0 p-6">
+//         <p className="text-gray-400 text-sm text-center">
+//           © {new Date().getFullYear()} Your Name
+//         </p>
+//       </footer>
+//     </div>
+//   );
+// };
+
+// export default AboutPage;
