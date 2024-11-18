@@ -8,14 +8,14 @@ function Resume() {
   };
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="h-[90vh] bg-orange-200/60 rounded-[30px]">
+      <h1 className="text-3xl font-bold pl-8 pt-8">Résumé</h1>
       <div className="container mx-auto px-4 py-8">
-        <h2 className="text-3xl font-bold mb-8">Resume</h2>
         <button
           onClick={handleDownload}
           className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded"
         >
-          View Resume (PDF)
+          View Résumé (PDF)
         </button>
       </div>
     </div>

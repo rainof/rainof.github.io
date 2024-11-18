@@ -74,7 +74,7 @@ function Home() {
   ];
   const animatedText = useTypingEffect(phrases);
   return (
-    <div className="min-h-screen relative overflow-hidden bg-[url('images/pattern-randomized.svg')] bg-fixed">
+    <div className="min-h-screen relative">
       <div className="container mx-auto px-20 flex items-center justify-center min-h-[calc(100vh-8rem)] md:min-h-[calc(100vh-6rem)]">
         <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-48 lg:gap-48 xl:gap-60 max-w-3xl w-full">
           {/* Hero Section */}

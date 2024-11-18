@@ -49,7 +49,8 @@ function Achievement() {
   };
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="h-[90vh] bg-orange-200/60 rounded-[30px]">
+      <h1 className="text-3xl font-bold pl-8 pt-8">Achievements</h1>
       <div className="container mx-auto px-4 py-8">
         <div className="mb-4">
           <button
