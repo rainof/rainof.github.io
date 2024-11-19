@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Menu } from "lucide-react";
 import Home from "../components/Home";
 import AboutMe from "../components/AboutMe";
@@ -8,14 +8,37 @@ import Resume from "../components/Resume";
 
 function Layout() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("");
+
+  useEffect(() => {
+    const sections = document.querySelectorAll("section");
+    const options = {
+      root: null,
+      threshold: 0.6,
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const id = entry.target.id;
+          setActiveSection(id);
+          window.history.replaceState(null, "", `#${id}`);
+        }
+      });
+    }, options);
+
+    sections.forEach((section) => observer.observe(section));
+
+    return () => observer.disconnect();
+  }, []);
 
   return (
     <div className="flex flex-col min-h-screen">
       <header className="bg-orange-200 text-white">
-        <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
+        <nav className="container mx-auto px-4 py-2 flex items-center justify-between">
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="sm:hidden text-gray-600 hover:text-gray-800"
+            className="sm:hidden text-black hover:text-white"
           >
             <Menu className="h-6 w-6" />
             <span className="sr-only">Toggle menu</span>
@@ -29,35 +52,56 @@ function Layout() {
             <a
               href="#home"
               onClick={() => setIsMenuOpen(false)}
-              className="px-4 py-2 sm:py-1 w-full sm:w-auto text-center sm:rounded-2xl text-black hover:text-white transition-colors"
+              //   className="px-4 py-2 sm:py-1 w-full sm:w-auto text-center sm:rounded-2xl text-black hover:text-white transition-colors"
+              className={`px-4 py-2 sm:py-1 w-full sm:w-auto text-center sm:rounded-2xl transition-colors ${
+                activeSection === "#home"
+                  ? "bg-orange-500 text-white"
+                  : "text-black hover:text-white"
+              }`}
             >
               Home
             </a>
             <a
               href="#aboutme"
               onClick={() => setIsMenuOpen(false)}
-              className="px-4 py-2 sm:py-1 w-full sm:w-auto text-center sm:rounded-2xl text-black hover:text-white transition-colors"
+              className={`px-4 py-2 sm:py-1 w-full sm:w-auto text-center sm:rounded-2xl transition-colors ${
+                activeSection === "#aboutme"
+                  ? "bg-orange-500 text-white"
+                  : "text-black hover:text-white"
+              }`}
             >
               About Me
             </a>
             <a
               href="#projects"
               onClick={() => setIsMenuOpen(false)}
-              className="px-4 py-2 sm:py-1 w-full sm:w-auto text-center sm:rounded-2xl text-black hover:text-white transition-colors"
+              className={`px-4 py-2 sm:py-1 w-full sm:w-auto text-center sm:rounded-2xl transition-colors ${
+                activeSection === "#projects"
+                  ? "bg-orange-500 text-white"
+                  : "text-black hover:text-white"
+              }`}
             >
               Projects
             </a>
             <a
               href="#achievements"
               onClick={() => setIsMenuOpen(false)}
-              className="px-4 py-2 sm:py-1 w-full sm:w-auto text-center sm:rounded-2xl text-black hover:text-white transition-colors"
+              className={`px-4 py-2 sm:py-1 w-full sm:w-auto text-center sm:rounded-2xl transition-colors ${
+                activeSection === "#achievements"
+                  ? "bg-orange-500 text-white"
+                  : "text-black hover:text-white"
+              }`}
             >
               Achievements
             </a>
             <a
               href="#resume"
               onClick={() => setIsMenuOpen(false)}
-              className="px-4 py-2 sm:py-1 w-full sm:w-auto text-center sm:rounded-2xl text-black hover:text-white transition-colors"
+              className={`px-4 py-2 sm:py-1 w-full sm:w-auto text-center sm:rounded-2xl transition-colors ${
+                activeSection === "#resume"
+                  ? "bg-orange-500 text-white"
+                  : "text-black hover:text-white"
+              }`}
             >
               Résumé
             </a>
