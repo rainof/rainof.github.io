@@ -1,12 +1,35 @@
 [
-    {
-      "id": 1,
-      "title": "Certifications: Title",
-      "description": "Lorem ipsum odor amet, consectetuer adipiscing elit. Ultricies vitae mollis quisque, eleifend convallis placerat platea."
-    },
-    {
-      "id": 2,
-      "title": "Certifications: Title",
-      "description": "Lorem ipsum odor amet, consectetuer adipiscing elit. Ultricies vitae mollis quisque, eleifend convallis placerat platea."
-    }
-  ]
+  {
+    "id": 1,
+    "title":
+      "Human-robot interaction system for non-expert users in convenience stores using behavior trees",
+    "author":
+      "Pattaraporn Tulathum, Bunyapon Usawalertkamol, Gustavo A Garcia Ricardez, Jun Takamatsu, and Tsukasa Ogasawara, Kenichi Matsumoto",
+    "venue":
+      "IEEE/SICE International Symposium on System Integration (SII), 2022"
+  },
+  {
+    "id": 2,
+    "title":
+      "Robot behavior debugger for non-expert users in convenience stores using behavior trees",
+    "author":
+      "Pattaraporn Tulathum, Bunyapon Usawalertkamol, Gustavo A Garcia Ricardez, Jun Takamatsu, and Tsukasa Ogasawara, Kenichi Matsumoto",
+    "venue": "Advanced Robotics, 2022"
+  },
+  {
+    "id": 3,
+    "title":
+      "Autonomous service robot for human-aware restock, straightening and disposal tasks in retail automation",
+    "author":
+      "Gustavo A Garcia Ricardez, Pedro M Uriguen Eljuri, Yuta Kamemura, Shiori Yokota, Noriyuki Kugou, Yoshitatsu Asama, Ziyu Wang, Hikaru Kumamoto, Kotaro Yoshimoto, Wai Y Chan, Tomoki Nagatani, Pattaraporn Tulathum, Bunyapon Usawalertkamol, Lotfi El Hafi, Hiroki Ikeuchi, Masaki Yamamoto, Jun Takamatsu, Tadahiro Taniguchi, and Tsukasa Ogasawara",
+    "venue": "Advanced Robotics, 2022"
+  },
+  {
+    "id": 4,
+    "title":
+      "Toward robot-agnostic home appliance operation: a task execution framework using motion primitives, ontology, and GUI",
+    "author":
+      "Akishige Yuguchi, Takumi Nakamura, Mayuki Toyoda, Masayuki Yamada, Pattaraporn Tulathum, Maël Aubert, Gustavo A Garcia Ricardez, Jun Takamatsu, and Tsukasa Ogasawara",
+    "venue": "Advanced Robotics, 2022"
+  }
+]

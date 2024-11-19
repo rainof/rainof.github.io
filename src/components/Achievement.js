@@ -60,19 +60,47 @@ function Achievement() {
           {data[activeTab].map((item) => (
             <div key={item.id} className="bg-white rounded-xl p-4">
               <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
-              <div className="flex flex-w  rap">
-                <strong className="mr-2">Authors:</strong>
-                <span
-                  className="text-zinc-600 italic"
-                  dangerouslySetInnerHTML={{
-                    __html: highlightName(item.author, "Pattaraporn Tulathum"),
-                  }}
-                />
-              </div>
-              <div className="flex flex-wrap mt-1">
-                <strong className="mr-1">Venue:</strong>
-                <span className="text-zinc-500">{item.venue}</span>
-              </div>
+
+              {activeTab === "awards" && (
+                <div className="flex flex-wrap mt-1">
+                  <strong className="mr-1">Award:</strong>
+                  <span className="text-zinc-500">{item.award}</span>
+                </div>
+              )}
+
+              {activeTab === "certifications" && (
+                <div className="grid sm:grid-cols-2 sm:gap-2">
+                  <div>
+                    <strong className="mr-1">Issuing organization:</strong>
+                    <span className="text-zinc-500">{item.by}</span>
+                  </div>
+                  <div>
+                    <strong className="mr-1">Issue date:</strong>
+                    <span className="text-zinc-500">{item.issue}</span>
+                  </div>
+                </div>
+              )}
+
+              {activeTab === "publications" && (
+                <>
+                  <div className="flex flex-wrap">
+                    <strong className="mr-2">Authors:</strong>
+                    <span
+                      className="text-zinc-600 italic"
+                      dangerouslySetInnerHTML={{
+                        __html: highlightName(
+                          item.author,
+                          "Pattaraporn Tulathum"
+                        ),
+                      }}
+                    />
+                  </div>
+                  <div className="flex flex-wrap mt-1">
+                    <strong className="mr-1">Venue:</strong>
+                    <span className="text-zinc-500">{item.venue}</span>
+                  </div>
+                </>
+              )}
             </div>
           ))}
         </div>
