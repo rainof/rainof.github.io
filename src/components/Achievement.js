@@ -1,51 +1,23 @@
 import React, { useState } from "react";
+import awards from "../data/awards.json";
+import certifications from "../data/certifications.json";
+import publications from "../data/publications.json";
 
+function highlightName(text, name) {
+  if (!text) return "";
+  const regex = new RegExp(`(${name})`, "gi");
+  return text.replace(
+    regex,
+    '<span class="text-orange-500 font-bold">$1</span>'
+  );
+}
 function Achievement() {
   const [activeTab, setActiveTab] = useState("awards");
 
-  const achievements = {
-    awards: [
-      {
-        id: 1,
-        title: "Awards: Title",
-        description:
-          "Lorem ipsum odor amet, consectetuer adipiscing elit. Ultricies vitae mollis quisque, eleifend convallis placerat platea.",
-      },
-      {
-        id: 2,
-        title: "Awards: Title",
-        description:
-          "Lorem ipsum odor amet, consectetuer adipiscing elit. Ultricies vitae mollis quisque, eleifend convallis placerat platea.",
-      },
-    ],
-    certifications: [
-      {
-        id: 1,
-        title: "Certifications: Title",
-        description:
-          "Lorem ipsum odor amet, consectetuer adipiscing elit. Ultricies vitae mollis quisque, eleifend convallis placerat platea.",
-      },
-      {
-        id: 2,
-        title: "Certifications: Title",
-        description:
-          "Lorem ipsum odor amet, consectetuer adipiscing elit. Ultricies vitae mollis quisque, eleifend convallis placerat platea.",
-      },
-    ],
-    publications: [
-      {
-        id: 1,
-        title: "Publications: Title",
-        description:
-          "Lorem ipsum odor amet, consectetuer adipiscing elit. Ultricies vitae mollis quisque, eleifend convallis placerat platea.",
-      },
-      {
-        id: 2,
-        title: "Publications: Title",
-        description:
-          "Lorem ipsum odor amet, consectetuer adipiscing elit. Ultricies vitae mollis quisque, eleifend convallis placerat platea.",
-      },
-    ],
+  const data = {
+    awards,
+    certifications,
+    publications,
   };
 
   return (
@@ -57,7 +29,7 @@ function Achievement() {
             className={`mr-2 px-4 py-2 rounded ${
               activeTab === "awards"
                 ? "bg-orange-500 text-white"
-                : "bg-gray-200"
+                : "bg-zinc-100"
             }`}
             onClick={() => setActiveTab("awards")}
           >
@@ -67,7 +39,7 @@ function Achievement() {
             className={`mr-2 px-4 py-2 rounded ${
               activeTab === "certifications"
                 ? "bg-orange-500 text-white"
-                : "bg-gray-200"
+                : "bg-zinc-100"
             }`}
             onClick={() => setActiveTab("certifications")}
           >
@@ -77,7 +49,7 @@ function Achievement() {
             className={`px-4 py-2 rounded ${
               activeTab === "publications"
                 ? "bg-orange-500 text-white"
-                : "bg-gray-200"
+                : "bg-zinc-100"
             }`}
             onClick={() => setActiveTab("publications")}
           >
@@ -85,10 +57,22 @@ function Achievement() {
           </button>
         </div>
         <div className="space-y-4">
-          {achievements[activeTab].map((item) => (
-            <div key={item.id} className="bg-white rounded-lg shadow-md p-4">
+          {data[activeTab].map((item) => (
+            <div key={item.id} className="bg-white rounded-xl p-4">
               <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
-              <p className="text-gray-600">{item.description}</p>
+              <div className="flex flex-w  rap">
+                <strong className="mr-2">Authors:</strong>
+                <span
+                  className="text-zinc-600 italic"
+                  dangerouslySetInnerHTML={{
+                    __html: highlightName(item.author, "Pattaraporn Tulathum"),
+                  }}
+                />
+              </div>
+              <div className="flex flex-wrap mt-1">
+                <strong className="mr-1">Venue:</strong>
+                <span className="text-zinc-500">{item.venue}</span>
+              </div>
             </div>
           ))}
         </div>
