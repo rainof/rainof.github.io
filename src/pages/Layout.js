@@ -63,7 +63,7 @@ function Layout() {
 
   return (
     <div className="flex flex-col min-h-screen">
-      <header className="bg-orange-200 text-white">
+      <header className="fixed top-0 left-0 w-full bg-orange-200 text-white z-50">
         <nav className="container mx-auto px-4 py-2 flex items-center justify-between">
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
