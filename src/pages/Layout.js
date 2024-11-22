@@ -115,6 +115,21 @@ function Layout() {
         </div>
       </main>
 
+      <button
+        onClick={() =>
+          activeSection < sections.length - 1
+            ? setActiveSection((prev) => prev + 1)
+            : setActiveSection(0)
+        }
+        className="fixed bottom-8 right-8 bg-orange-500 text-white rounded-full p-3 shadow-lg"
+      >
+        {activeSection < sections.length - 1 ? (
+          <ChevronDown className="h-6 w-6" />
+        ) : (
+          <ChevronUp className="h-6 w-6" />
+        )}
+      </button>
+
       <footer className="bg-gray-800 text-white py-4">
         <div className="container mx-auto px-4 text-center">
           © 2024 Your Name. All rights reserved.
