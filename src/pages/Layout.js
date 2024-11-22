@@ -4,7 +4,6 @@ import Home from "../components/Home";
 import AboutMe from "../components/AboutMe";
 import Project from "../components/Project";
 import Achievement from "../components/Achievement";
-import Resume from "../components/Resume";
 
 function Layout() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -95,7 +94,8 @@ function Layout() {
               Achievements
             </a>
             <a
-              href="#resume"
+              href="/path-to-resume.pdf"
+              download="My_Resume.pdf"
               onClick={() => setIsMenuOpen(false)}
               className={`px-4 py-2 sm:py-1 w-full sm:w-auto text-center sm:rounded-2xl transition-colors ${
                 activeSection === "#resume"
@@ -122,9 +122,6 @@ function Layout() {
             </section>
             <section id="achievements" className="min-h-screen p-8">
               <Achievement />
-            </section>
-            <section id="resume" className="min-h-screen p-8">
-              <Resume />
             </section>
           </main>
         </div>

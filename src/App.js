@@ -5,7 +5,6 @@ import Home from "./components/Home";
 import AboutMe from "./components/AboutMe";
 import Project from "./components/Project";
 import Achievement from "./components/Achievement";
-import Resume from "./components/Resume";
 import NotFound from "./pages/NotFoundPage";
 
 function App() {
@@ -18,7 +17,6 @@ function App() {
             <Route path="aboutme" element={<AboutMe />} />
             <Route path="projects" element={<Project />} />
             <Route path="achievements" element={<Achievement />} />
-            <Route path="resume" element={<Resume />} />
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
