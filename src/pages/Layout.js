@@ -18,43 +18,6 @@ function Layout() {
   ];
 
   useEffect(() => {
-    const handleScroll = (e) => {
-      e.preventDefault();
-      if (e.deltaY > 0) {
-        // Scroll down
-        if (activeSection < sections.length - 1) {
-          setActiveSection((prev) => prev + 1);
-        }
-      } else if (e.deltaY < 0) {
-        // Scroll up
-        if (activeSection > 0) {
-          setActiveSection((prev) => prev - 1);
-        }
-      }
-    };
-
-    const handleKeydown = (e) => {
-      if (e.key === "ArrowDown") {
-        if (activeSection < sections.length - 1) {
-          setActiveSection((prev) => prev + 1);
-        }
-      } else if (e.key === "ArrowUp") {
-        if (activeSection > 0) {
-          setActiveSection((prev) => prev - 1);
-        }
-      }
-    };
-
-    window.addEventListener("wheel", handleScroll, { passive: false });
-    window.addEventListener("keydown", handleKeydown);
-
-    return () => {
-      window.removeEventListener("wheel", handleScroll);
-      window.removeEventListener("keydown", handleKeydown);
-    };
-  }, [activeSection, sections.length]);
-
-  useEffect(() => {
     sectionRefs.current[activeSection]?.scrollIntoView({
       behavior: "smooth",
     });

@@ -36,7 +36,7 @@ function Project() {
 
   return (
     <div className="flex items-center justify-center">
-      <div className="mt-[6vh] w-screen sm:w-[80vw] lg:w-[60vw] h-[85vh] bg-orange-200/60 rounded-[30px] overflow-y-auto">
+      <div className="mt-[6vh] w-screen sm:w-[80vw] lg:w-[60vw] h-auto bg-orange-200/60 rounded-[30px]">
         <h1 className="text-3xl font-bold pl-8 pt-8">Projects</h1>
         <div className="container mx-auto px-12 py-8">
           <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-12">
