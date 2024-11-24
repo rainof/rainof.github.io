@@ -141,19 +141,6 @@ function Home() {
           </div>
         </div>
       </div>
-
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-20 sm:bottom-28 left-1/2 -translate-x-1/2 animate-bounce">
-        <button
-          onClick={() =>
-            window.scrollTo({ top: window.innerHeight, behavior: "smooth" })
-          }
-          className="text-orange-500 hover:text-orange-600 transition-colors"
-          aria-label="Scroll down for more content"
-        >
-          <ChevronDown className="h-8 w-8 text-orange-500" />
-        </button>
-      </div>
     </div>
   );
 }
