@@ -1,0 +1,32 @@
+[
+    {
+      "id": 1,
+      "title": "Frontend Montor Project",
+      "date": "2024",
+      "description": "This is a group of mini projects from frontend mentor to create the web ui and component from the given descriptions. These projects help me learn how to create and test the web interface and compoenents using React.js.",
+      "tags": [],
+      "imageUrl": "/ignore/aboutme_gapyear.jpg",
+      "githubUrl": "",
+      "demoUrl": ""
+    },
+    {
+      "id": 2,
+      "title": "AI Chatbot",
+      "date": "2024",
+      "description": "A custom made AI chatbot application powered by using OpenAI API. This project helps me learn how to make a full stack web application from receiving the user's command, connecting to the third-party service, and returning the result back to the user.",
+      "tags": [],
+      "imageUrl": "/ignore/aboutme_gapyear.jpg",
+      "githubUrl": "",
+      "demoUrl": ""
+    },
+    {
+      "id": 3,
+      "title": "My Profile's Website",
+      "date": "2024",
+      "description": "This project is the showcase of my past experiences and achievements.",
+      "tags": [],
+      "imageUrl": "/ignore/aboutme_gapyear.jpg",
+      "githubUrl": "",
+      "demoUrl": ""
+    }
+]
