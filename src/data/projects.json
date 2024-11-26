@@ -1,32 +1,143 @@
+
 [
-    {
-      "id": 1,
-      "title": "Frontend Montor Project",
-      "date": "2024",
-      "description": "This is a group of mini projects from frontend mentor to create the web ui and component from the given descriptions. These projects help me learn how to create and test the web interface and compoenents using React.js.",
-      "tags": [],
-      "imageUrl": "/ignore/aboutme_gapyear.jpg",
-      "githubUrl": "",
-      "demoUrl": ""
-    },
-    {
-      "id": 2,
-      "title": "AI Chatbot",
-      "date": "2024",
-      "description": "A custom made AI chatbot application powered by using OpenAI API. This project helps me learn how to make a full stack web application from receiving the user's command, connecting to the third-party service, and returning the result back to the user.",
-      "tags": [],
-      "imageUrl": "/ignore/aboutme_gapyear.jpg",
-      "githubUrl": "",
-      "demoUrl": ""
-    },
-    {
-      "id": 3,
-      "title": "My Profile's Website",
-      "date": "2024",
-      "description": "This project is the showcase of my past experiences and achievements.",
-      "tags": [],
-      "imageUrl": "/ignore/aboutme_gapyear.jpg",
-      "githubUrl": "",
-      "demoUrl": ""
-    }
+  {
+    "id": 2,
+    "title": "My Profile's Website",
+    "date": "2024",
+    "description": "This project is the showcase of my past experiences and achievements.",
+    "tags": ["JavaScript", "React.JS", "TailwinCSS"],
+    "imageUrl": "/ignore/draft.png",
+    "githubUrl": "",
+    "demoUrl": ""
+  },
+  {
+    "id": 3,
+    "title": "AI Chatbot",
+    "date": "2024",
+    "description": "A custom made AI chatbot application powered by using OpenAI API. This project helps me learn how to make a full stack web application from receiving the user's command, connecting to the third-party service, and returning the result back to the user.",
+    "tags": [],
+    "imageUrl": "/ignore/aboutme_gapyear.jpg",
+    "githubUrl": "",
+    "demoUrl": ""
+  },
+  {
+    "id": 4,
+    "title": "Frontend Montor Project",
+    "date": "2024",
+    "description": "This is a group of mini projects from frontend mentor to create the web ui and component from the given descriptions. These projects help me learn how to create and test the web interface and compoenents using React.js.",
+    "tags": [],
+    "imageUrl": "/ignore/aboutme_gapyear.jpg",
+    "githubUrl": "",
+    "demoUrl": ""
+  },
+  {
+    "id": 5,
+    "title": "Frontend Montor Project",
+    "date": "2024",
+    "description": "This is a group of mini projects from frontend mentor to create the web ui and component from the given descriptions. These projects help me learn how to create and test the web interface and compoenents using React.js.",
+    "tags": [],
+    "imageUrl": "/ignore/aboutme_gapyear.jpg",
+    "githubUrl": "",
+    "demoUrl": ""
+  },
+  {
+    "id": 6,
+    "title": "Frontend Montor Project",
+    "date": "2024",
+    "description": "This is a group of mini projects from frontend mentor to create the web ui and component from the given descriptions. These projects help me learn how to create and test the web interface and compoenents using React.js.",
+    "tags": [],
+    "imageUrl": "/ignore/aboutme_gapyear.jpg",
+    "githubUrl": "",
+    "demoUrl": ""
+  },
+  {
+    "id": 7,
+    "title": "Frontend Montor Project",
+    "date": "2024",
+    "description": "This is a group of mini projects from frontend mentor to create the web ui and component from the given descriptions. These projects help me learn how to create and test the web interface and compoenents using React.js.",
+    "tags": [],
+    "imageUrl": "/ignore/aboutme_gapyear.jpg",
+    "githubUrl": "",
+    "demoUrl": ""
+  },
+  {
+    "id": 8,
+    "title": "Frontend Montor Project",
+    "date": "2024",
+    "description": "This is a group of mini projects from frontend mentor to create the web ui and component from the given descriptions. These projects help me learn how to create and test the web interface and compoenents using React.js.",
+    "tags": [],
+    "imageUrl": "/ignore/aboutme_gapyear.jpg",
+    "githubUrl": "",
+    "demoUrl": ""
+  },
+  {
+    "id": 9,
+    "title": "Frontend Montor Project",
+    "date": "2024",
+    "description": "This is a group of mini projects from frontend mentor to create the web ui and component from the given descriptions. These projects help me learn how to create and test the web interface and compoenents using React.js.",
+    "tags": [],
+    "imageUrl": "/ignore/aboutme_gapyear.jpg",
+    "githubUrl": "",
+    "demoUrl": ""
+  },
+  {
+    "id": 10,
+    "title": "Frontend Montor Project",
+    "date": "2024",
+    "description": "This is a group of mini projects from frontend mentor to create the web ui and component from the given descriptions. These projects help me learn how to create and test the web interface and compoenents using React.js.",
+    "tags": [],
+    "imageUrl": "/ignore/aboutme_gapyear.jpg",
+    "githubUrl": "",
+    "demoUrl": ""
+  },
+  {
+    "id": 11,
+    "title": "Frontend Montor Project",
+    "date": "2024",
+    "description": "This is a group of mini projects from frontend mentor to create the web ui and component from the given descriptions. These projects help me learn how to create and test the web interface and compoenents using React.js.",
+    "tags": [],
+    "imageUrl": "/ignore/aboutme_gapyear.jpg",
+    "githubUrl": "",
+    "demoUrl": ""
+  },
+  {
+    "id": 12,
+    "title": "Frontend Montor Project",
+    "date": "2024",
+    "description": "This is a group of mini projects from frontend mentor to create the web ui and component from the given descriptions. These projects help me learn how to create and test the web interface and compoenents using React.js.",
+    "tags": [],
+    "imageUrl": "/ignore/aboutme_gapyear.jpg",
+    "githubUrl": "",
+    "demoUrl": ""
+  },
+  {
+    "id": 13,
+    "title": "Frontend Montor Project",
+    "date": "2024",
+    "description": "This is a group of mini projects from frontend mentor to create the web ui and component from the given descriptions. These projects help me learn how to create and test the web interface and compoenents using React.js.",
+    "tags": [],
+    "imageUrl": "/ignore/aboutme_gapyear.jpg",
+    "githubUrl": "",
+    "demoUrl": ""
+  },
+  {
+    "id": 14,
+    "title": "Frontend Montor Project",
+    "date": "2024",
+    "description": "This is a group of mini projects from frontend mentor to create the web ui and component from the given descriptions. These projects help me learn how to create and test the web interface and compoenents using React.js.",
+    "tags": [],
+    "imageUrl": "/ignore/aboutme_gapyear.jpg",
+    "githubUrl": "",
+    "demoUrl": ""
+  },
+  {
+    "id": 15,
+    "title": "Frontend Montor Project",
+    "date": "2024",
+    "description": "This is a group of mini projects from frontend mentor to create the web ui and component from the given descriptions. These projects help me learn how to create and test the web interface and compoenents using React.js.",
+    "tags": [],
+    "imageUrl": "/ignore/aboutme_gapyear.jpg",
+    "githubUrl": "",
+    "demoUrl": ""
+  }
 ]
