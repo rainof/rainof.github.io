@@ -26,7 +26,7 @@ function Layout() {
 
   return (
     <div className="flex flex-col min-h-screen">
-      <header className="fixed top-0 left-0 w-full bg-orange-200 text-white z-50">
+      <header className="fixed top-0 left-0 w-full bg-orange-100 text-white z-50">
         <nav className="container mx-auto px-4 py-2 flex items-center justify-between">
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -64,7 +64,7 @@ function Layout() {
 
       <main className="pt-16">
         {" "}
-        <div className="min-h-screen relative overflow-hidden bg-[url('images/pattern-randomized.svg')] bg-fixed">
+        <div className="min-h-screen relative overflow-hidden bg-[url('images/pattern-randomized.svg')]">
           {sections.map((section, index) => (
             <section
               key={section.id}
@@ -93,9 +93,9 @@ function Layout() {
         )}
       </button>
 
-      <footer className="bg-gray-800 text-white py-4">
+      <footer className="bg-white text-black py-2">
         <div className="container mx-auto px-4 text-center">
-          © 2024 Your Name. All rights reserved.
+          © 2024 Pattaraporn Tulathum. All rights reserved.
         </div>
       </footer>
     </div>

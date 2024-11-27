@@ -4,13 +4,14 @@ import Projects from "../data/projects.json";
 function Project() {
   return (
     <div className="flex items-center justify-center">
-      <div className="mt-[6vh] w-screen sm:w-[80vw] lg:w-[60vw] h-auto bg-orange-200/60 rounded-[30px]">
+      {/* <div className="mt-[6vh] w-screen sm:w-[80vw] lg:w-[60vw] h-auto bg-orange-200/60 rounded-[30px]"> */}
+      <div className="mt-[6vh] w-screen sm:w-[80vw] xl:w-[60vw] h-auto rounded-[30px]">
         <h1 className="text-3xl font-bold pl-8 pt-8">Projects</h1>
         <div className="grid grid-cols-1 gap-8 p-8">
           {Projects.map((project, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl p-8 flex flex-col items-center hover:bg-gray-100 transition-colors"
+              className="bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center hover:bg-gray-100 transition-colors"
             >
               <div className="h-full w-full flex items-center justify-center mb-6">
                 <img
