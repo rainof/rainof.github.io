@@ -25,7 +25,7 @@
     "title": "Tip Calculator App",
     "date": "Aug 2024",
     "description": "This project focused on building a simple JavaScript calculator, ideal for practicing input handling and user interaction logic. I’m proud of the daily learning progress and overcoming challenges through trial and error to understand and implement solutions effectively.",
-    "tags": [],
+    "tags": ["HTML", "CSS", "JavaScript"],
     "imageUrl": "/ignore/draft.png",
     "githubUrl": "https://github.com/rainof/tips-calculator-project",
     "demoUrl": "https://rainof.github.io/tips-calculator-project/"
@@ -35,7 +35,7 @@
     "title": "Time Tracking Dashboard",
     "date": "Aug 2024",
     "description": "This project was a great way to practice CSS Grid while incorporating JSON data to switch between timeframes dynamically. I’m proud of learning to fetch data and use React hooks to manage state effectively. Despite initial difficulties with styling and state management, I improved by using Figma for design adjustments and building on knowledge from previous lessons.",
-    "tags": [],
+    "tags": ["HTML", "CSS", "JavaScript"],
     "imageUrl": "/ignore/draft.png",
     "githubUrl": "https://github.com/rainof/time-tracking-dashboard-project",
     "demoUrl": "https://rainof.github.io/time-tracking-dashboard-project/"
@@ -45,7 +45,7 @@
     "title": "Newsletter Sign-up Form With Success Message",
     "date": "Aug 2024",
     "description": "This project involved creating a form with validation, submission, and a success state, providing an opportunity to practice DOM manipulation. I’m proud of successfully implementing form submission, error management, and navigation between pages. Despite challenges with event handling, I improved by leveraging documentation and trial-and-error, gaining valuable experience for smoother development in the future.",
-    "tags": [],
+    "tags": ["HTML", "CSS", "JavaScript"],
     "imageUrl": "/ignore/draft.png",
     "githubUrl": "https://github.com/rainof/newsletter-sign-up-with-success-message",
     "demoUrl": "https://rainof.github.io/newsletter-sign-up-with-success-message/"
@@ -55,7 +55,7 @@
     "title": "Article Preview Component",
     "date": "Aug 2024",
     "description": "This project involved creating an article preview component with animations for sharing icons, focusing on layout and interactivity. Opting to use vanilla JavaScript instead of modern frameworks made the challenge more complex, but I persevered through difficulties like implementing functionality, styling, and managing the build process. Completing the project provided valuable insights and a rewarding learning experience.",
-    "tags": [],
+    "tags": ["HTML", "CSS", "JavaScript"],
     "imageUrl": "/ignore/draft.png",
     "githubUrl": "https://github.com/rainof/article-preview-component-project",
     "demoUrl": "https://rainof.github.io/article-preview-component-project/"
@@ -65,7 +65,7 @@
     "title": "Meet Landing Page",
     "date": "Aug 2024",
     "description": "This HTML and CSS challenge helped me further develop my layout skills, especially with responsive design and mobile-first principles. I encountered challenges with HTML structure and had to make frequent adjustments, but I’m proud of completing the project and handling the complexity involved.",
-    "tags": [],
+    "tags": ["HTML", "CSS"],
     "imageUrl": "/ignore/draft.png",
     "githubUrl": "https://github.com/rainof/meet-landing-page-project",
     "demoUrl": "https://rainof.github.io/meet-landing-page-project/"
@@ -75,7 +75,7 @@
     "title": "Testimonials Grid Section",
     "date": "Aug 2024",
     "description": "This challenge helped me practice CSS Grid, focusing on managing layouts and using span and map to adjust elements. I’m proud of completing it faster than previous tasks, overcoming the challenge of mastering these techniques through practice and applying what I had learned.",
-    "tags": [],
+    "tags": ["HTML", "CSS"],
     "imageUrl": "/ignore/draft.png",
     "githubUrl": "https://github.com/rainof/testimonials-grid-section-project",
     "demoUrl": "https://rainof.github.io/testimonials-grid-section-project/"
@@ -85,7 +85,7 @@
     "title": "Four Card Feature Section",
     "date": "Aug 2024",
     "description": "This challenge helped me practice creating multi-column and responsive layouts using Flexbox and CSS Grid. I’m proud of overcoming initial confusion and completing a layout that closely resembles a real-world website. The main challenge was understanding Flexbox and CSS Grid, but through extra study and practice, I was able to successfully implement the layout.",
-    "tags": [],
+    "tags": ["HTML", "CSS"],
     "imageUrl": "/ignore/draft.png",
     "githubUrl": "https://github.com/rainof/four-card-feature-project",
     "demoUrl": "https://rainof.github.io/four-card-feature-project/"
@@ -95,7 +95,7 @@
     "title": "Product Preview Card Component",
     "date": "Jul 2024",
     "description": "This HTML and CSS challenge helped me improve my skills in handling complex elements and building responsive projects using a mobile-first approach and SCSS. The main challenge was responsive design, but I overcame it by applying SCSS for image adaptation and focusing on mobile-first techniques.",
-    "tags": [],
+    "tags": ["HTML", "CSS"],
     "imageUrl": "/ignore/draft.png",
     "githubUrl": "https://github.com/rainof/product-preview-card-project",
     "demoUrl": "https://rainof.github.io/product-preview-card-project/"
@@ -105,7 +105,7 @@
     "title": "Recipe Page",
     "date": "Jul 2024",
     "description": "This challenge helped me focus on writing semantic HTML by creating a recipe page with a complex structure. I’m proud of developing a responsive webpage and organizing content effectively. The main challenge was managing the different sections, which I overcame by grouping related elements to simplify the structure.",
-    "tags": [],
+    "tags": ["HTML", "CSS"],
     "imageUrl": "/ignore/draft.png",
     "githubUrl": "https://github.com/rainof/recipe-page-project",
     "demoUrl": "https://rainof.github.io/recipe-page-project/"
@@ -115,7 +115,7 @@
     "title": "Social Links Profile",
     "date": "Jul 2024",
     "description": "This project involved building a personalized social link-sharing profile, perfect for showcasing all your social profiles. I’m proud of the skills and knowledge gained through the process, especially in CSS and Flexbox. Despite challenges in closely replicating the design, I successfully tackled them by methodically analyzing and adjusting styles with the inspect tool.",
-    "tags": [],
+    "tags": ["HTML", "CSS"],
     "imageUrl": "/ignore/draft.png",
     "githubUrl": "https://github.com/rainof/social-links-profile-project",
     "demoUrl": "https://rainof.github.io/social-links-profile-project/"
@@ -125,7 +125,7 @@
     "title": "Blog Preview Card",
     "date": "Jul 2024",
     "description": "This beginner-friendly HTML and CSS project was ideal for practicing fundamental concepts like HTML structure and the box model. Despite initial challenges with the complex design, I successfully broke it down into manageable steps, building detailed, real-world web elements and gaining confidence in my skills.",
-    "tags": [],
+    "tags": ["HTML", "CSS"],
     "imageUrl": "/ignore/draft.png",
     "githubUrl": "https://github.com/rainof/blog-preview-card-project",
     "demoUrl": "https://rainof.github.io/blog-preview-card-project/"
@@ -135,7 +135,7 @@
     "title": "QR Code Component",
     "date": "Jul 2024",
     "description": "This project was a great introduction to HTML and CSS, focusing on creating a static card layout. I successfully built a website from scratch, overcoming challenges like integrating React with Bootstrap and ensuring responsiveness across devices. This experience has laid a strong foundation for more efficient and refined projects in the future.",
-    "tags": [],
+    "tags": ["HTML", "CSS"],
     "imageUrl": "/ignore/draft.png",
     "githubUrl": "https://github.com/rainof/qr-code-project",
     "demoUrl": "https://rainof.github.io/qr-code-project/"
