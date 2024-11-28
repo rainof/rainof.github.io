@@ -89,7 +89,7 @@ function Layout() {
         {activeSection < sections.length - 1 ? (
           <ChevronDown className="h-6 w-6" strokeWidth={3} />
         ) : (
-          <ChevronUp className="h-6 w-6" strokeWidth={3} />
+          <p>Top</p>
         )}
       </button>
 
