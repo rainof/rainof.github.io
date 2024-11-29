@@ -5,7 +5,8 @@
       "description": "Ranked 1st with Team NAIST-RITS-Panasonic in one of the three main tasks of the Future Convenience Store Challenge (FCSC) of the 2020 World Robot Summit.",
       "organization": "World Robot Summit (WRS)",
       "location": "Nagoya, Japan",
-      "date": "Sep 2021"
+      "date": "Sep 2021",
+      "year": "2021"
     },
     {
       "id": 2,
@@ -13,7 +14,8 @@
       "description": "Ranked 1st with Team NAIST-RITS-Panasonic in one of the three main tasks of the Future Convenience Store Challenge (FCSC) of the 2020 World Robot Summit.",
       "organization": "World Robot Summit (WRS)",
       "location": "Nagoya, Japan",
-      "date": "Sep 2021"
+      "date": "Sep 2021",
+      "year": "2021"
     },
     {
       "id": 3,
@@ -21,7 +23,8 @@
       "description": "Overall Winner Prize with Team NAIST-RITS-Panasonic in the Future Convenience Store Challenge (FSCS) of World Robot Summit 2020.",
       "organization": "World Robot Summit (WRS)",
       "location": "Nagoya, Japan",
-      "date": "Sep 2021"
+      "date": "Sep 2021",
+      "year": "2021"
     },
     {
       "id": 4,
@@ -29,7 +32,8 @@
       "description": "One-year special scholarship during the COVID-19 pandemic, awarded by the Iwatani Naoji Foundation to Southeast Asian students in Japan who successfully passed a Japanese interview.",
       "organization": "Iwatani Naoji Foundation",
       "location": "Nara, Japan",
-      "date": "Jun 2020"
+      "date": "Jun 2020",
+      "year": "2020"
     },
     {
       "id": 5,
@@ -37,7 +41,8 @@
       "description": "Ranked 1st with Team NAIST-RITS-Panasonic in one of the three main tasks of the Future Convenience Store Challenge at the Trial Competition 2019 of World Robot Summit 2020.",
       "organization": "World Robot Summit (WRS)",
       "location": "Tokyo, Japan",
-      "date": "Dec 2019"
+      "date": "Dec 2019",
+      "year": "2019"
     },
     {
       "id": 6,
@@ -45,7 +50,8 @@
       "description": "Ranked 2nd with Team NAIST-RITS-Panasonic in one of the three main tasks of the Future Convenience Store Challenge at the Trial Competition 2019 of World Robot Summit 2020.",
       "organization": "World Robot Summit (WRS)",
       "location": "Tokyo, Japan",
-      "date": "Dec 2019"
+      "date": "Dec 2019",
+      "year": "2019"
     },
     {
       "id": 7,
@@ -53,7 +59,8 @@
       "description": "Ranked 1st and awarded 3,000,000 JPY with Team NAIST-RITS-Panasonic in one of the three main tasks of the Future Convenience Store Challenge at the World Robot Summit 2018.",
       "organization": "World Robot Summit (WRS)",
       "location": "Tokyo, Japan",
-      "date": "Oct 2018"
+      "date": "Oct 2018",
+      "year": "2018"
     },
     {
       "id": 8,
@@ -61,7 +68,8 @@
       "description": "Awarded by the NEDO office for overall excellence in competition with Team NAIST-RITS-Panasonic during World Robot Summit 2018.",
       "organization": "New Energy and Industrial Technology Development Organization (NEDO)",
       "location": "Tokyo, Japan",
-      "date": "Oct 2018"
+      "date": "Oct 2018",
+      "year": "2018"
     },
     {
       "id": 9,
@@ -69,7 +77,8 @@
       "description": "Awarded by the SICE society for displaying advanced research integration with Team NAIST-RITS-Panasonic during World Robot Summit 2018.",
       "organization": "Society of Instrument and Control Engineers (SICE)",
       "location": "Tokyo, Japan",
-      "date": "Oct 2018"
+      "date": "Oct 2018",
+      "year": "2018"
     },
     {
       "id": 10,
@@ -77,15 +86,17 @@
       "description": "Ranked 2nd with SKUBA-JR team during RoboCup Asia Pacific 2017",
       "organization": "RoboCup Asia Pacific organizer",
       "location": "Bangkok, Thailand",
-      "date": "Dec 2017"
+      "date": "Dec 2017",
+      "year": "2017"
     },
     {
       "id": 11,
       "title": "2nd Place at RoboCup Japan Open 2017",
       "description": "Ranked 2nd with SKUBA-JR team during RoboCup Japan Open 2017",
       "organization": "RoboCup Japan Open organizer",
-      "location": "May 2017",
-      "date": "Nagoya, Japan"
+      "location": "Nagoya, Japan",
+      "date": "May 2017",
+      "year": "2017"
     },
     {
       "id": 12,
@@ -93,6 +104,7 @@
       "description": "Ranked 5th with SKUBA-JR team during RoboCup Japan Open 2016",
       "organization": "RoboCup Japan Open organizer",
       "location": "Nagoya, Japan",
-      "date": "Mar 2016"
+      "date": "Mar 2016",
+      "year": "2016"
     }
   ]

@@ -3,48 +3,56 @@
     "id": 1,
     "title": "Google Advanced Data Analytics Certificate",
     "by": "Coursera",
-    "issue": "Oct 2023"
+    "issue": "Oct 2023",
+    "year": "2023"
   },
   {
     "id": 2,
     "title": "Social Listening - Data Analyst Edition",
     "by": "DataRockie",
-    "issue": "Oct 2023"
+    "issue": "Oct 2023",
+    "year": "2023"
   },
   {
     "id": 3,
     "title": "Mini Data Science Bootcamp",
     "by": "DataRockie",
-    "issue": "Sep 2023"
+    "issue": "Sep 2023",
+    "year": "2023"
   },
   {
     "id": 4,
     "title": "Google Data Analytics Certificate",
     "by": "Coursera",
-    "issue": "Aug 2023"
+    "issue": "Aug 2023",
+    "year": "2023"
   },
   {
     "id": 5,
     "title": "Design Databases With PostgreSQL Skill Path",
     "by": "Codecademy",
-    "issue": "Jun 2023"
+    "issue": "Jun 2023",
+    "year": "2023"
   },
   {
     "id": 6,
     "title": "SQL (Basic)",
     "by": "HackerRank",
-    "issue": "Dec 2022"
+    "issue": "Dec 2022",
+    "year": "2022"
   },
   {
     "id": 7,
     "title": "Problem solving (Intermediate)",
     "by": "HackerRank",
-    "issue": "Sep 2022"
+    "issue": "Sep 2022",
+    "year": "2022"
   },
   {
     "id": 8,
     "title": "Problem solving (Basic)",
     "by": "HackerRank",
-    "issue": "Sep 2022"
+    "issue": "Sep 2022",
+    "year": "2022"
   }
 ]

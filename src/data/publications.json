@@ -6,7 +6,8 @@
     "author":
       "Pattaraporn Tulathum, Bunyapon Usawalertkamol, Gustavo A Garcia Ricardez, Jun Takamatsu, and Tsukasa Ogasawara, Kenichi Matsumoto",
     "venue":
-      "IEEE/SICE International Symposium on System Integration (SII), 2022"
+      "IEEE/SICE International Symposium on System Integration (SII), 2022",
+    "year": "2022"
   },
   {
     "id": 2,
@@ -14,7 +15,8 @@
       "Robot behavior debugger for non-expert users in convenience stores using behavior trees",
     "author":
       "Pattaraporn Tulathum, Bunyapon Usawalertkamol, Gustavo A Garcia Ricardez, Jun Takamatsu, and Tsukasa Ogasawara, Kenichi Matsumoto",
-    "venue": "Advanced Robotics, 2022"
+    "venue": "Advanced Robotics, 2022",
+    "year": "2022"
   },
   {
     "id": 3,
@@ -22,7 +24,8 @@
       "Autonomous service robot for human-aware restock, straightening and disposal tasks in retail automation",
     "author":
       "Gustavo A Garcia Ricardez, Pedro M Uriguen Eljuri, Yuta Kamemura, Shiori Yokota, Noriyuki Kugou, Yoshitatsu Asama, Ziyu Wang, Hikaru Kumamoto, Kotaro Yoshimoto, Wai Y Chan, Tomoki Nagatani, Pattaraporn Tulathum, Bunyapon Usawalertkamol, Lotfi El Hafi, Hiroki Ikeuchi, Masaki Yamamoto, Jun Takamatsu, Tadahiro Taniguchi, and Tsukasa Ogasawara",
-    "venue": "Advanced Robotics, 2022"
+    "venue": "Advanced Robotics, 2022",
+    "year": "2022"
   },
   {
     "id": 4,
@@ -30,6 +33,7 @@
       "Toward robot-agnostic home appliance operation: a task execution framework using motion primitives, ontology, and GUI",
     "author":
       "Akishige Yuguchi, Takumi Nakamura, Mayuki Toyoda, Masayuki Yamada, Pattaraporn Tulathum, Maël Aubert, Gustavo A Garcia Ricardez, Jun Takamatsu, and Tsukasa Ogasawara",
-    "venue": "Advanced Robotics, 2022"
+    "venue": "Advanced Robotics, 2022",
+    "year": "2022"
   }
 ]
