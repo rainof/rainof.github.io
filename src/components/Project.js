@@ -11,7 +11,7 @@ function Project() {
           {Projects.map((project, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center hover:bg-gray-100 transition-colors"
+              className="bg-white rounded-2xl shadow-lg p-8 flex flex-col hover:bg-gray-100 transition-colors"
             >
               <div className="h-full w-full flex items-center justify-center mb-6">
                 <img
@@ -20,37 +20,41 @@ function Project() {
                   className="max-h-full max-w-full object-contain"
                 />
               </div>
-              <div className="flex gap-4 mb-4">
-                <a
-                  href={project.demoUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-4 py-2 bg-blue-500 text-white rounded-lg shadow hover:bg-blue-600 transition"
-                >
-                  Demo
-                </a>
-                <a
-                  href={project.githubUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-4 py-2 bg-gray-800 text-white rounded-lg shadow hover:bg-gray-700 transition"
-                >
-                  Code
-                </a>
-              </div>
-              <h2 className="text-xl font-medium mb-2">{project.title}</h2>
-              <p className="text-gray-600">{project.description}</p>
-              <p className="text-sm text-gray-400">{project.date}</p>
-              <div className="flex flex-wrap gap-2 mb-4">
-                {project.tags.map((tag, index) => (
-                  <span
-                    key={index}
-                    className="px-3 py-1 bg-gray-200 text-gray-700 rounded-full text-sm"
+              <div className="grid grid-cols-2 mb-4">
+                <div className="flex flex-col justify-center">
+                  <h2 className="text-xl font-medium">{project.title}</h2>
+                  <div className="flex flex-wrap gap-2 my-2">
+                    {project.tags.map((tag, index) => (
+                      <span
+                        key={index}
+                        className="px-2 py-1 bg-gray-200 text-gray-700 rounded-full text-xs"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                  <p className="text-xs text-gray-400">{project.date}</p>
+                </div>
+                <div className="flex items-center justify-end gap-4">
+                  <a
+                    href={project.demoUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-2 py-1 bg-orange-500 text-white rounded-lg shadow hover:bg-blue-600 transition"
                   >
-                    {tag}
-                  </span>
-                ))}
+                    Demo
+                  </a>
+                  <a
+                    href={project.githubUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-2 py-1 bg-gray-800 text-white rounded-lg shadow hover:bg-gray-700 transition"
+                  >
+                    Code
+                  </a>
+                </div>
               </div>
+              <p className="text-gray-600">{project.description}</p>
             </div>
           ))}
         </div>
