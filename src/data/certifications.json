@@ -1,55 +1,69 @@
 [
   {
     "id": 1,
+    "title": "Python (Basic)",
+    "by": "HackerRank",
+    "issue": "Dec 2024",
+    "year": "2024"
+  },
+  {
+    "id": 2,
+    "title": "React (Basic)",
+    "by": "HackerRank",
+    "issue": "Dec 2024",
+    "year": "2024"
+  },
+  {
+    "id": 3,
     "title": "Google Advanced Data Analytics Certificate",
     "by": "Coursera",
     "issue": "Oct 2023",
     "year": "2023"
   },
   {
-    "id": 2,
+    "id": 4,
     "title": "Social Listening - Data Analyst Edition",
     "by": "DataRockie",
     "issue": "Oct 2023",
     "year": "2023"
   },
   {
-    "id": 3,
+    "id": 5,
     "title": "Mini Data Science Bootcamp",
     "by": "DataRockie",
     "issue": "Sep 2023",
     "year": "2023"
   },
   {
-    "id": 4,
+    "id": 6,
     "title": "Google Data Analytics Certificate",
     "by": "Coursera",
     "issue": "Aug 2023",
     "year": "2023"
   },
   {
-    "id": 5,
+    "id": 7,
     "title": "Design Databases With PostgreSQL Skill Path",
     "by": "Codecademy",
     "issue": "Jun 2023",
     "year": "2023"
   },
   {
-    "id": 6,
+    "id": 8,
     "title": "SQL (Basic)",
     "by": "HackerRank",
     "issue": "Dec 2022",
     "year": "2022"
   },
   {
-    "id": 7,
+    "id": 9,
     "title": "Problem solving (Intermediate)",
     "by": "HackerRank",
     "issue": "Sep 2022",
     "year": "2022"
   },
   {
-    "id": 8,
+    "id": 10,
     "title": "Problem solving (Basic)",
     "by": "HackerRank",
     "issue": "Sep 2022",
