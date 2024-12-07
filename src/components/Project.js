@@ -11,27 +11,21 @@ function Project() {
           {Projects.map((project, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl shadow-lg p-8 flex flex-col hover:bg-gray-100 transition-colors"
+              className="bg-white rounded-2xl shadow-lg px-20 pt-20 pb-12 flex flex-col transition-colors"
             >
-              {/* Overlapping Images */}
               <div className="relative h-80 w-full mb-6">
                 <img
                   src={project.imageUrl1}
                   alt={`${project.title} Tertiary`}
-                  className="absolute right-0 bottom-0 w-auto h-full object-cover rounded-md shadow-lg z-30 border-2 border-white hover:border-orange-300"
-                />
-                <img
-                  src={project.imageUrl2}
-                  alt={`${project.title} Secondary`}
-                  className="absolute left-60 bottom-0 w-auto h-full object-cover rounded-md shadow-md z-20 border-2 border-white hover:border-orange-300"
+                  className="absolute right-3 bottom-0 w-1/5 h-auto object-cover rounded-md shadow-lg z-30 border-4 border-white"
                 />
                 <img
                   src={project.imageUrl3}
                   alt={project.title}
-                  className="absolute left-0 bottom-0 w-auto h-full object-cover rounded-md shadow-lg z-10 border-2 border-white hover:border-orange-300"
+                  className="absolute left-3 bottom-0 w-4/5 h-auto object-cover rounded-md shadow-lg z-10 border-4 border-white"
                 />
               </div>
-              <div className="grid grid-cols-2 mb-4">
+              <div className="grid grid-cols-2 my-4">
                 <div className="flex flex-col justify-center">
                   <h2 className="text-xl font-medium">{project.title}</h2>
                   <div className="flex flex-wrap gap-2 my-2">
@@ -65,7 +59,9 @@ function Project() {
                   </a>
                 </div>
               </div>
-              <p className="text-gray-600">{project.description}</p>
+              <p className="text-gray-600 text-justify">
+                {project.description}
+              </p>
             </div>
           ))}
         </div>
