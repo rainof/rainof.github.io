@@ -1,5 +1,6 @@
 import React from "react";
 import Projects from "../data/projects.json";
+import { Eye, Github } from "lucide-react";
 
 function Project() {
   return (
@@ -45,17 +46,23 @@ function Project() {
                     href={project.demoUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-2 py-1 bg-orange-500 text-white rounded-lg shadow hover:bg-blue-600 transition"
+                    className="px-2 py-1 bg-orange-500 text-white rounded-full shadow hover:bg-orange-300 transition"
                   >
-                    Demo
+                    <div className="flex gap-2 items-center justify-center m-2">
+                      <Eye className="h-6 w-6" />
+                      Preview
+                    </div>
                   </a>
                   <a
                     href={project.githubUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-2 py-1 bg-gray-800 text-white rounded-lg shadow hover:bg-gray-700 transition"
+                    className="px-2 py-1 bg-gray-800 text-white rounded-full shadow hover:bg-gray-400 transition"
                   >
-                    Code
+                    <div className="flex gap-2 items-center justify-center m-2">
+                      <Github className="h-6 w-6" />
+                      GitHub
+                    </div>
                   </a>
                 </div>
               </div>
