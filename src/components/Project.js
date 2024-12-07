@@ -4,8 +4,8 @@ import Projects from "../data/projects.json";
 function Project() {
   return (
     <div className="flex items-center justify-center">
-      {/* <div className="mt-[6vh] w-screen sm:w-[80vw] lg:w-[60vw] h-auto bg-orange-200/60 rounded-[30px]"> */}
       <div className="mt-[6vh] w-screen sm:w-[80vw] xl:w-[60vw] h-auto rounded-[30px]">
+        {/* <div> */}
         <h1 className="text-3xl font-bold pl-8 pt-8">Projects</h1>
         <div className="grid grid-cols-1 gap-8 p-8">
           {Projects.map((project, index) => (
@@ -13,11 +13,22 @@ function Project() {
               key={index}
               className="bg-white rounded-2xl shadow-lg p-8 flex flex-col hover:bg-gray-100 transition-colors"
             >
-              <div className="h-full w-full flex items-center justify-center mb-6">
+              {/* Overlapping Images */}
+              <div className="relative h-80 w-full mb-6">
                 <img
-                  src={project.imageUrl}
+                  src={project.imageUrl1}
+                  alt={`${project.title} Tertiary`}
+                  className="absolute right-0 bottom-0 w-auto h-full object-cover rounded-md shadow-lg z-30 border-2 border-white hover:border-orange-300"
+                />
+                <img
+                  src={project.imageUrl2}
+                  alt={`${project.title} Secondary`}
+                  className="absolute left-60 bottom-0 w-auto h-full object-cover rounded-md shadow-md z-20 border-2 border-white hover:border-orange-300"
+                />
+                <img
+                  src={project.imageUrl3}
                   alt={project.title}
-                  className="max-h-full max-w-full object-contain"
+                  className="absolute left-0 bottom-0 w-auto h-full object-cover rounded-md shadow-lg z-10 border-2 border-white hover:border-orange-300"
                 />
               </div>
               <div className="grid grid-cols-2 mb-4">
