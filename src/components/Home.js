@@ -67,7 +67,7 @@ const useTypingEffect = (
 
 function Home() {
   const phrases = [
-    "I am a frontend developer",
+    "I am a software developer",
     "I am a robotics researcher",
     "I am a lifelong learner",
     "I am ... who I am",

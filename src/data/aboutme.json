@@ -1,15 +1,24 @@
 [
   {
     "year": 2024,
-    "title": "Lifelong learning",
-    "description": "Still learn more",
+    "title": "Lifelong Learning",
+    "description": [
+      "Developed full-stack systems, implementing both frontend and backend features based on provided designs.",
+      "Strengthened skills in data analytics, understanding trends and insights critical for decision-making.",
+      "Acquired proficiency in SQL and NoSQL databases to address modern data storage challenges.",
+      "Applied AI tools to expedite project development, streamline workflows, and enhance overall productivity."
+    ],
     "imageUrl": "/ignore/aboutme_gapyear.jpg"
   },
   {
     "year": 2023,
     "title": "Doctor of Engineering",
     "school": "Information Science",
-    "description": "Developed a system to allow non-robot experrts to create and debug programs in robot behavior using visual programming and simulators",
+    "description": [
+      "Designed and developed a low-code platform for non-expert users to create and debug robot behavior programs with visual programming (i.e., drag and drop logic blocks) and test them in a 3D simulator.",
+      "Utilized RGB-D cameras to record human poses and processed them using the OpenPose library.",
+      "Conducted a user study and A/B testing with non-expert participants to evaluate the platform's usability."
+    ],
     "grad": "March 2023",
     "organization": "Nara Institute of Science and Technology, Japan",
     "imageUrl": "/ignore/aboutme_gapyear.jpg"
@@ -18,7 +27,10 @@
     "year": 2020,
     "title": "Master of Engineering",
     "school": "Information Science",
-    "description": "TBA",
+    "description": [
+      "Developed a method to estimate material vibration using user skin vibration and oscillator signals.",
+      "Designed a deep learning model to analyze user finger characteristics for material identification."
+    ],
     "grad": "March 2020",
     "organization": "Nara Institute of Science and Technology, Japan",
     "imageUrl": "/ignore/aboutme_gapyear.jpg"
@@ -27,7 +39,10 @@
     "year": 2017,
     "title": "Bachelor of Engineering",
     "school": "Computer Engineering",
-    "description": "TBA",
+    "description": [
+      "Co-developed software for TurtleBot 2 that performed simultaneous mapping, object localization, and area exploration using the SLAM algorithm.",
+      "Contributed to a robot manipulation system for TurtleBot 2, utilized in the RoboCup@Home competition."
+    ],
     "grad": "June 2017",
     "organization": "Kasetsart University, Thailand",
     "imageUrl": "/ignore/aboutme_gapyear.jpg"

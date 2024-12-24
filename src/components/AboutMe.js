@@ -18,11 +18,26 @@ function AboutMe() {
                     {item.year}
                   </div>
                 </div>
-                <div className="grid grid-cols-3 bg-white p-4 rounded-xl shadow-lg">
-                  <div className="col-span-2">
+                <div className="flex flex-grow bg-white p-4 rounded-xl shadow-lg">
+                  <div>
                     <h2 className="text-2xl font-bold mb-2">{item.title}</h2>
-                    <h2 className="text-2xl font-bold mb-2">{item.school}</h2>
-                    <p className="text-gray-600 mb-2">{item.description}</p>
+                    {item.school && (
+                      <h2 className="text-2xl font-bold mb-2">{item.school}</h2>
+                    )}
+
+                    {/* Check if description is an array and display it as a list */}
+                    {Array.isArray(item.description) ? (
+                      <ul className="list-disc pl-6 text-gray-600 mb-2">
+                        {item.description.map((desc, index) => (
+                          <li key={index} className="leading-relaxed">
+                            {desc}
+                          </li>
+                        ))}
+                      </ul>
+                    ) : (
+                      <p className="text-gray-600 mb-2">{item.description}</p>
+                    )}
+
                     {item.grad && (
                       <p className="text-gray-500">
                         <span className="font-semibold">Graduation:</span>{" "}
@@ -35,13 +50,6 @@ function AboutMe() {
                         {item.organization}
                       </p>
                     )}
-                  </div>
-                  <div className="flex-shrink-0 w-full h-full">
-                    <img
-                      src={`${item.imageUrl}`}
-                      alt={`${item.title} visual`}
-                      className="w-full h-full object-cover rounded-lg"
-                    />
                   </div>
                 </div>
               </div>
