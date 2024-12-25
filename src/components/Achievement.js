@@ -34,7 +34,7 @@ function Achievement() {
     <div className="flex items-center justify-center">
       <div className="mt-[6vh] w-screen sm:w-[80vw] xl:w-[60vw] h-auto rounded-[30px]">
         <h1 className="text-3xl font-bold pl-8 pt-8">Achievements</h1>
-        <div className="container mx-auto px-8 py-8">
+        <div className="container mx-auto p-8">
           <div className="mb-4">
             <button
               className={`mr-2 px-4 py-2 rounded ${
@@ -79,7 +79,7 @@ function Achievement() {
                     {groupedData[year].map((item) => (
                       <div
                         key={item.id}
-                        className="bg-white rounded-xl shadow-lg p-4"
+                        className="bg-white rounded-xl shadow-lg p-8"
                       >
                         <h3 className="text-xl font-semibold mb-2">
                           {item.title}
