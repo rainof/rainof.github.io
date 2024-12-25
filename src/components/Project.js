@@ -4,7 +4,7 @@ import { Eye, Github } from "lucide-react";
 
 function Project() {
   return (
-    <div className="flex items-center justify-center px-4">
+    <div className="flex items-center justify-center">
       <div className="mt-[6vh] w-full sm:w-[90vw] xl:w-[80vw] h-auto rounded-[30px]">
         <h1 className="text-2xl sm:text-3xl font-bold text-center mb-6">
           Projects
@@ -15,20 +15,20 @@ function Project() {
               key={index}
               className="bg-white rounded-2xl shadow-lg p-6 sm:p-8 flex flex-col transition-transform hover:scale-[1.02]"
             >
-              <div className="relative h-60 sm:h-72 w-full mb-6">
+              <div className="relative h-[40vw] sm:h-[45vw] lg:h-[20vw] w-full mb-6">
                 <img
                   src={project.imageUrl1}
                   alt={`${project.title} Secondary`}
-                  className="absolute right-3 bottom-0 w-1/3 sm:w-1/4 h-auto object-cover rounded-md shadow-lg z-30 border-4 border-white max-w-full"
+                  className="absolute right-3 bottom-0 w-1/5 h-auto object-cover rounded-md shadow-lg z-30 border-4 border-white max-w-full"
                 />
                 <img
                   src={project.imageUrl3}
                   alt={project.title}
-                  className="absolute left-3 bottom-0 w-2/3 sm:w-3/4 h-auto object-cover rounded-md shadow-lg z-10 border-4 border-white max-w-full"
+                  className="absolute left-3 bottom-0 w-4/5 h-auto object-cover rounded-md shadow-lg z-10 border-4 border-white max-w-full"
                 />
               </div>
 
-              <div className="flex flex-col lg:flex-row items-start justify-between gap-4">
+              <div className="flex flex-col sm:flex-row items-start justify-between gap-4">
                 <div className="flex flex-col gap-4 w-full lg:w-2/3">
                   <h2 className="text-lg sm:text-xl font-medium">
                     {project.title}
@@ -46,33 +46,33 @@ function Project() {
                   <p className="text-xs text-gray-400">{project.date}</p>
                 </div>
 
-                <div className="flex flex-col gap-4 mt-4 lg:mt-0 lg:w-1/3 lg:items-end lg:justify-start">
+                <div className="flex flex-row lg:flex-col 2xl:flex-row gap-4 sm:mt-4 lg:mt-0 lg:w-1/2 lg:items-end lg:justify-start">
                   <a
                     href={project.demoUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-3 py-2 bg-orange-500 text-white rounded-full shadow hover:bg-orange-300 transition"
+                    className="px-4 py-2 bg-orange-500 text-white rounded-full shadow hover:bg-orange-300 transition"
                   >
                     <div className="flex gap-2 items-center justify-center">
-                      <Eye className="h-5 sm:h-6 w-5 sm:w-6" />
-                      <span className="hidden sm:block">Preview</span>
+                      <Eye className="h-4 sm:h-6 w-4 sm:w-6" />
+                      <span className="text-xs sm:text-base">Preview</span>
                     </div>
                   </a>
                   <a
                     href={project.githubUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-3 py-2 bg-gray-800 text-white rounded-full shadow hover:bg-gray-400 transition"
+                    className="px-4 py-2 bg-gray-800 text-white rounded-full shadow hover:bg-gray-400 transition"
                   >
                     <div className="flex gap-2 items-center justify-center">
-                      <Github className="h-5 sm:h-6 w-5 sm:w-6" />
-                      <span className="hidden sm:block">GitHub</span>
+                      <Github className="h-4 sm:h-6 w-4 sm:w-6" />
+                      <span className="text-xs sm:text-base">GitHub</span>
                     </div>
                   </a>
                 </div>
               </div>
 
-              <p className="text-gray-600 text-sm sm:text-base text-justify mt-4">
+              <p className="text-gray-600 text-sm sm:text-base mt-4">
                 {project.description}
               </p>
             </div>
