@@ -11,10 +11,10 @@ function Layout() {
   const sectionRefs = useRef([]);
 
   const sections = [
-    { id: "home", Component: Home },
-    { id: "aboutme", Component: AboutMe },
-    { id: "projects", Component: Project },
-    { id: "achievements", Component: Achievement },
+    { id: "home", displayName: "Home", Component: Home },
+    { id: "aboutme", displayName: "About Me", Component: AboutMe },
+    { id: "projects", displayName: "Projects", Component: Project },
+    { id: "achievements", displayName: "Achievements", Component: Achievement },
   ];
 
   useEffect(() => {
@@ -55,7 +55,7 @@ function Layout() {
                     : "text-black hover:text-orange-500"
                 }`}
               >
-                {section.id.replace(/^./, (str) => str.toUpperCase())}
+                {section.displayName}
               </a>
             ))}
           </div>
@@ -63,7 +63,6 @@ function Layout() {
       </header>
 
       <main className="pt-10">
-        {" "}
         <div className="min-h-screen relative overflow-hidden bg-[url('images/pattern-randomized.svg')]">
           {sections.map((section, index) => (
             <section
