@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Mail, Github, Linkedin, ChevronDown } from "lucide-react";
-import FrontendMentor from "../images/frontendmentor.svg";
+import FrontendMentor from "../images/frontendmentor.png";
+import FrontendMentorHover from "../images/frontendmentor-hover.png";
 import Hero from "../images/fon_img_v2.png";
 
 const useTypingEffect = (
@@ -75,10 +76,10 @@ function Home() {
   const animatedText = useTypingEffect(phrases);
   return (
     <div className="min-h-screen relative">
-      <div className="container mx-auto px-20 flex items-center justify-center min-h-[calc(100vh-8rem)] md:min-h-[calc(100vh-6rem)]">
+      <div className="container md:px-20 flex items-center justify-center min-h-[calc(100vh-8rem)] md:min-h-[calc(100vh-6rem)]">
         <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-48 lg:gap-48 xl:gap-60 max-w-3xl w-full">
           {/* Hero Section */}
-          <div className="text-center md:text-left md:w-[45%]">
+          <div className="text-center md:w-[45%]">
             <p className="text-xl md:text-2xl xl:text-3xl text-orange-500">
               Hello, I'm
             </p>
@@ -87,7 +88,7 @@ function Home() {
               <br />
               Tulathum
             </h1>
-            <p className="text-xl md:text-2xl xl:text=3xl text-zinc-600 sm:text-zinc-400 mt-8">
+            <p className="text-lg text-zinc-600 mt-8 sm:text-zinc-400 md:text-2xl xl:text=3xl ">
               {animatedText}
               <span className="animate-blink inline-block w-[0.1em] h-[0.8em] ml-1 bg-orange-400"></span>
             </p>
@@ -96,33 +97,38 @@ function Home() {
             <div className="flex justify-center md:justify-start gap-4 sm:gap-5 mt-8">
               <a
                 href="mailto:pattaraporn.tulathum@gmail.com"
-                className="p-2 rounded-full bg-orange-500 text-white hover:bg-orange-600 transition-colors"
+                className="p-2 rounded-full bg-orange-500 border border-orange-500 text-white bg-orange-500 hover:bg-white hover:border hover:border-orange-500 hover:text-orange-500 transition-colors"
               >
                 <Mail className="h-5 w-5" />
                 <span className="sr-only">Email</span>
               </a>
               <a
                 href="https://github.com/rainof"
-                className="p-2 rounded-full bg-orange-500 text-white hover:bg-orange-600 transition-colors"
+                className="p-2 rounded-full bg-orange-500 border border-orange-500 text-white bg-orange-500 hover:bg-white hover:border hover:border-orange-500 hover:text-orange-500 transition-colors"
               >
                 <Github className="h-5 w-5" />
                 <span className="sr-only">GitHub</span>
               </a>
               <a
                 href="https://www.linkedin.com/in/pattaraporn-tulathum/"
-                className="p-2 rounded-full bg-orange-500 text-white hover:bg-orange-600 transition-colors"
+                className="p-2 rounded-full bg-orange-500 border border-orange-500 text-white bg-orange-500 hover:bg-white hover:border hover:border-orange-500 hover:text-orange-500 transition-colors"
               >
                 <Linkedin className="h-5 w-5" />
                 <span className="sr-only">LinkedIn</span>
               </a>
               <a
                 href="https://www.frontendmentor.io/profile/rainof"
-                className="p-2 rounded-full bg-orange-500 text-white hover:bg-orange-600 transition-colors"
+                className="p-2 rounded-full bg-orange-500 border border-orange-500 text-white bg-orange-500 hover:bg-white hover:border hover:border-orange-500 hover:text-orange-500 transition-colors group"
               >
                 <img
                   src={FrontendMentor}
-                  alt="Fronend Mentor"
-                  className="h-5 w-5 filter invert drop-shadow-lg"
+                  alt="Frontend Mentor"
+                  className="h-5 w-5 drop-shadow-lg group-hover:hidden"
+                />
+                <img
+                  src={FrontendMentorHover}
+                  alt="Frontend Mentor Hover"
+                  className="h-5 w-5 font-bold drop-shadow-lg hidden group-hover:block"
                 />
                 <span className="sr-only">Home</span>
               </a>

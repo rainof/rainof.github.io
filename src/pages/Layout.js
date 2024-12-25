@@ -30,7 +30,7 @@ function Layout() {
         <nav className="container mx-auto px-4 py-2 flex items-center justify-between">
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="sm:hidden text-black hover:text-white"
+            className="sm:hidden text-black hover:text-orange-500"
           >
             <Menu className="h-6 w-6" />
             <span className="sr-only">Toggle menu</span>
@@ -39,7 +39,7 @@ function Layout() {
           <div
             className={`${
               isMenuOpen ? "flex" : "hidden"
-            } sm:flex flex-col sm:flex-row sm:gap-6 absolute sm:relative left-0 right-0 top-14 sm:top-0 bg-white sm:bg-transparent z-50 border-b sm:border-0 shadow-md sm:shadow-none`}
+            } sm:flex sm:flex-row sm:gap-6 sm:relative sm:top-0 sm:bg-transparent sm:border-0 sm:shadow-none flex-col absolute left-0 right-0 top-10 bg-white z-50 border-b shadow-md`}
           >
             {sections.map((section, index) => (
               <a
@@ -52,7 +52,7 @@ function Layout() {
                 className={`px-4 py-2 sm:py-1 w-full sm:w-auto text-center sm:rounded-2xl transition-colors ${
                   activeSection === index
                     ? "bg-orange-500 text-white"
-                    : "text-black hover:text-white"
+                    : "text-black hover:text-orange-500"
                 }`}
               >
                 {section.id.replace(/^./, (str) => str.toUpperCase())}
@@ -62,7 +62,7 @@ function Layout() {
         </nav>
       </header>
 
-      <main className="pt-16">
+      <main className="pt-10">
         {" "}
         <div className="min-h-screen relative overflow-hidden bg-[url('images/pattern-randomized.svg')]">
           {sections.map((section, index) => (
@@ -84,7 +84,7 @@ function Layout() {
             ? setActiveSection((prev) => prev + 1)
             : setActiveSection(0)
         }
-        className="fixed bottom-8 right-8 bg-orange-500 hover:bg-orange-600 text-white rounded-full p-3 shadow-lg animate-bounce"
+        className="fixed bottom-8 right-8 bg-orange-500 border border-orange-500 text-white bg-orange-500 hover:bg-white hover:border hover:border-orange-500 hover:text-orange-500 rounded-full p-3 shadow-lg animate-bounce"
       >
         {activeSection < sections.length - 1 ? (
           <ChevronDown className="h-6 w-6" strokeWidth={3} />
