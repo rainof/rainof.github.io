@@ -1,6 +1,18 @@
 
 [
   {
+    "id": 1,
+    "title": "Todo List",
+    "date": "Apr 2025",
+    "description": "This project is a to-do list application built with React, featuring unit testing using Vitest.",
+    "tags": ["JavaScript", "React.JS", "TailwinCSS", "Vitest"],
+    "imageUrl1": "/ignore/project_img/todo_test_1.png",
+    "imageUrl2": "/ignore/project_img/todo_test_2.png",
+    "imageUrl3": "/ignore/project_img/todo_test_3.png",
+    "githubUrl": "https://github.com/rainof/todo-test",
+    "demoUrl": ""
+  },
+  {
     "id": 2,
     "title": "My Profile's Website",
     "date": "Nov 2024",
@@ -10,7 +22,7 @@
     "imageUrl2": "/ignore/project_img/portfolio_website_2.png",
     "imageUrl3": "/ignore/project_img/portfolio_website_3.png",
     "githubUrl": "https://github.com/rainof/rainof.github.io",
-    "demoUrl": ""
+    "demoUrl": "https://rainof.github.io"
   },
   {
     "id": 3,
