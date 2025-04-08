@@ -47,28 +47,57 @@ function Project() {
                 </div>
 
                 <div className="flex flex-row lg:flex-col 2xl:flex-row gap-4 sm:mt-4 lg:mt-0 lg:w-1/2 lg:items-end lg:justify-start">
-                  <a
-                    href={project.demoUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="px-4 py-2 bg-orange-500 text-white rounded-full shadow hover:bg-orange-300 transition"
-                  >
-                    <div className="flex gap-2 items-center justify-center">
-                      <Eye className="h-4 sm:h-6 w-4 sm:w-6" />
-                      <span className="text-xs sm:text-base">Preview</span>
-                    </div>
-                  </a>
-                  <a
-                    href={project.githubUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="px-4 py-2 bg-gray-800 text-white rounded-full shadow hover:bg-gray-400 transition"
-                  >
-                    <div className="flex gap-2 items-center justify-center">
-                      <Github className="h-4 sm:h-6 w-4 sm:w-6" />
-                      <span className="text-xs sm:text-base">GitHub</span>
-                    </div>
-                  </a>
+                  {project.demoUrl ? (
+                    <a
+                      href={project.demoUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-4 py-2 bg-orange-500 text-white rounded-full shadow hover:bg-orange-300 transition"
+                      title="Preview Project"
+                    >
+                      <div className="flex gap-2 items-center justify-center">
+                        <Eye className="h-4 sm:h-6 w-4 sm:w-6" />
+                        <span className="text-xs sm:text-base">Preview</span>
+                      </div>
+                    </a>
+                  ) : (
+                    <button
+                      disabled
+                      className="px-4 py-2 bg-orange-100 text-white rounded-full shadow cursor-not-allowed"
+                      title="No Preview Available"
+                    >
+                      <div className="flex gap-2 items-center justify-center">
+                        <Eye className="h-4 sm:h-6 w-4 sm:w-6" />
+                        <span className="text-xs sm:text-base">Preview</span>
+                      </div>
+                    </button>
+                  )}
+
+                  {project.githubUrl ? (
+                    <a
+                      href={project.githubUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-4 py-2 bg-gray-800 text-white rounded-full shadow hover:bg-gray-400 transition"
+                      title="View GitHub Repository"
+                    >
+                      <div className="flex gap-2 items-center justify-center">
+                        <Github className="h-4 sm:h-6 w-4 sm:w-6" />
+                        <span className="text-xs sm:text-base">GitHub</span>
+                      </div>
+                    </a>
+                  ) : (
+                    <button
+                      disabled
+                      className="px-4 py-2 bg-gray-200 text-white rounded-full shadow cursor-not-allowed"
+                      title="No GitHub Available"
+                    >
+                      <div className="flex gap-2 items-center justify-center">
+                        <Github className="h-4 sm:h-6 w-4 sm:w-6" />
+                        <span className="text-xs sm:text-base">GitHub</span>
+                      </div>
+                    </button>
+                  )}
                 </div>
               </div>
 
