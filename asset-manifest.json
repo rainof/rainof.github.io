@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.3635c044.css",
-    "main.js": "/static/js/main.f2801e61.js",
+    "main.js": "/static/js/main.f407e333.js",
     "static/media/fon_img_v2.png": "/static/media/fon_img_v2.a46a08330ab88dfad28a.png",
     "static/media/frontendmentor-hover.png": "/static/media/frontendmentor-hover.da239d0ae2307b91707f.png",
     "static/media/frontendmentor.png": "/static/media/frontendmentor.d5acca2f2c393708b114.png",
     "static/media/pattern-randomized.svg": "/static/media/pattern-randomized.8e479e09ba92eb5fbbe6.svg",
     "index.html": "/index.html",
     "main.3635c044.css.map": "/static/css/main.3635c044.css.map",
-    "main.f2801e61.js.map": "/static/js/main.f2801e61.js.map"
+    "main.f407e333.js.map": "/static/js/main.f407e333.js.map"
   },
   "entrypoints": [
     "static/css/main.3635c044.css",
-    "static/js/main.f2801e61.js"
+    "static/js/main.f407e333.js"
   ]
 }
