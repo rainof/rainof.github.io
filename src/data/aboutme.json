@@ -7,8 +7,7 @@
       "Strengthened skills in data analytics, understanding trends and insights critical for decision-making.",
       "Acquired proficiency in SQL and NoSQL databases to address modern data storage challenges.",
       "Applied AI tools to expedite project development, streamline workflows, and enhance overall productivity."
-    ],
-    "imageUrl": "/ignore/aboutme_gapyear.jpg"
+    ]
   },
   {
     "year": 2023,
@@ -20,8 +19,7 @@
       "Conducted a user study and A/B testing with non-expert participants to evaluate the platform's usability."
     ],
     "grad": "March 2023",
-    "organization": "Nara Institute of Science and Technology, Japan",
-    "imageUrl": "/ignore/aboutme_gapyear.jpg"
+    "organization": "Nara Institute of Science and Technology, Japan"
   },
   {
     "year": 2020,
@@ -32,8 +30,7 @@
       "Designed a deep learning model to analyze user finger characteristics for material identification."
     ],
     "grad": "March 2020",
-    "organization": "Nara Institute of Science and Technology, Japan",
-    "imageUrl": "/ignore/aboutme_gapyear.jpg"
+    "organization": "Nara Institute of Science and Technology, Japan"
   },
   {
     "year": 2017,
@@ -44,7 +41,6 @@
       "Contributed to a robot manipulation system for TurtleBot 2, utilized in the RoboCup@Home competition."
     ],
     "grad": "June 2017",
-    "organization": "Kasetsart University, Thailand",
-    "imageUrl": "/ignore/aboutme_gapyear.jpg"
+    "organization": "Kasetsart University, Thailand"
   }
 ]

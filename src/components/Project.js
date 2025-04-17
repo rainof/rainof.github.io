@@ -1,5 +1,6 @@
 import React from "react";
 import Projects from "../data/projects.json";
+import projectImages from "../assets/project_img/images.js";
 import { Eye, Github } from "lucide-react";
 
 function Project() {
@@ -17,12 +18,12 @@ function Project() {
             >
               <div className="relative h-[40vw] sm:h-[45vw] lg:h-[20vw] w-full mb-6">
                 <img
-                  src={project.imageUrl1}
+                  src={projectImages[project.imageUrl1]}
                   alt={`${project.title} Secondary`}
                   className="absolute right-3 bottom-0 w-1/5 h-auto object-cover rounded-md shadow-lg z-30 border-4 border-white max-w-full"
                 />
                 <img
-                  src={project.imageUrl3}
+                  src={projectImages[project.imageUrl2]}
                   alt={project.title}
                   className="absolute left-3 bottom-0 w-4/5 h-auto object-cover rounded-md shadow-lg z-10 border-4 border-white max-w-full"
                 />
