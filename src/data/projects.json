@@ -16,7 +16,7 @@
     "title": "My Profile's Website",
     "date": "Nov 2024",
     "description": "This project is the showcase of my past experiences and achievements.",
-    "tags": ["JavaScript", "ReactJS", "TailwindCSS", "GitHubPages"],
+    "tags": ["JavaScript", "ReactJS", "TailwindCSS", "Vercel", "GitHubPages"],
     "imageUrl1": "portfolio_website_1",
     "imageUrl2": "portfolio_website_2",
     "githubUrl": "https://github.com/rainof/rainof.github.io",
