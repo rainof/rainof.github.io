@@ -1,17 +1,47 @@
 {
   "files": {
-    "main.css": "/static/css/main.3635c044.css",
-    "main.js": "/static/js/main.f407e333.js",
+    "main.css": "/static/css/main.c5815a69.css",
+    "main.js": "/static/js/main.1121354a.js",
+    "static/media/meet_landing_2.png": "/static/media/meet_landing_2.e3d7b74fdaa1a373864d.png",
+    "static/media/recipe_page_2.png": "/static/media/recipe_page_2.eb8a1c9de6277ec73a8a.png",
+    "static/media/article_preview_2.png": "/static/media/article_preview_2.4bd872bbeff6ec0ce1b3.png",
+    "static/media/recipe_page_1.png": "/static/media/recipe_page_1.89df004403001c18c4ae.png",
+    "static/media/product_preview_2.png": "/static/media/product_preview_2.81f4563c176658ca9d9d.png",
     "static/media/fon_img_v2.png": "/static/media/fon_img_v2.a46a08330ab88dfad28a.png",
+    "static/media/product_preview_1.png": "/static/media/product_preview_1.aa104b35bcebafe422cf.png",
+    "static/media/article_preview_1.png": "/static/media/article_preview_1.e69907eb6c8154f0c808.png",
+    "static/media/testimonials_2.png": "/static/media/testimonials_2.c8d2244554d9f79655c2.png",
+    "static/media/portfolio_website_2.png": "/static/media/portfolio_website_2.66881848ab1565781b59.png",
+    "static/media/portfolio_website_1.png": "/static/media/portfolio_website_1.1c802e458cd92a91265e.png",
+    "static/media/meet_landing_1.png": "/static/media/meet_landing_1.a48932d86f10290ff7b7.png",
+    "static/media/newsletter_1.png": "/static/media/newsletter_1.fb6c195c7650b7764165.png",
+    "static/media/four_card_2.png": "/static/media/four_card_2.246aa7cd812e558c267c.png",
+    "static/media/newsletter_2.png": "/static/media/newsletter_2.c7746ac70fc0c06545d3.png",
+    "static/media/time_tracker_2.png": "/static/media/time_tracker_2.217db09ea45c2860a68f.png",
+    "static/media/testimonials_1.png": "/static/media/testimonials_1.3fe3847f68a29c709b8c.png",
+    "static/media/four_card_1.png": "/static/media/four_card_1.d929c239c5e0f00e3d85.png",
+    "static/media/blog_preview_2.png": "/static/media/blog_preview_2.e32142307cf2a49e5091.png",
+    "static/media/social_links_2.png": "/static/media/social_links_2.9fed29f649d3dc105da7.png",
+    "static/media/qr_code_2.png": "/static/media/qr_code_2.ea684f9d7f85b5b05364.png",
+    "static/media/tip_calculation_2.png": "/static/media/tip_calculation_2.a4a9634c57dccc8c332e.png",
+    "static/media/time_tracker_1.png": "/static/media/time_tracker_1.e242090041a4a9c436bc.png",
+    "static/media/social_links_1.png": "/static/media/social_links_1.02c6e2d5ad4ce73bbab4.png",
+    "static/media/blog_preview_1.png": "/static/media/blog_preview_1.23c8fdb6da01ebe2c5b4.png",
+    "static/media/qr_code_1.png": "/static/media/qr_code_1.9a92fc4821417a4d3294.png",
+    "static/media/tip_calculation_1.png": "/static/media/tip_calculation_1.ca7e559fc818290386e1.png",
+    "static/media/chatbot_2.png": "/static/media/chatbot_2.2da154c11fef14e731a9.png",
     "static/media/frontendmentor-hover.png": "/static/media/frontendmentor-hover.da239d0ae2307b91707f.png",
     "static/media/frontendmentor.png": "/static/media/frontendmentor.d5acca2f2c393708b114.png",
+    "static/media/chatbot_1.png": "/static/media/chatbot_1.6198e51f1e84ac93b05d.png",
+    "static/media/todo_test_2.png": "/static/media/todo_test_2.c36e9fb87bbd515ac44c.png",
+    "static/media/todo_test_1.png": "/static/media/todo_test_1.0cdeb0b82901b8275d01.png",
     "static/media/pattern-randomized.svg": "/static/media/pattern-randomized.8e479e09ba92eb5fbbe6.svg",
     "index.html": "/index.html",
-    "main.3635c044.css.map": "/static/css/main.3635c044.css.map",
-    "main.f407e333.js.map": "/static/js/main.f407e333.js.map"
+    "main.c5815a69.css.map": "/static/css/main.c5815a69.css.map",
+    "main.1121354a.js.map": "/static/js/main.1121354a.js.map"
   },
   "entrypoints": [
-    "static/css/main.3635c044.css",
-    "static/js/main.f407e333.js"
+    "static/css/main.c5815a69.css",
+    "static/js/main.1121354a.js"
   ]
 }
